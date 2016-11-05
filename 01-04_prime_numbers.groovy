@@ -3,15 +3,18 @@
 boolean prime = true;
 int i = 0;
 int j = 2;
+
 print("Please enter an integer: ");
 i = Integer.parseInt(System.console().readLine());
+
 if (i < 2) {
-	prime = false;
+  prime = false;
 } else while ((j < i) && (prime)) {
 	if (i % j == 0) {
 		prime = false;
 	} else j++;
 }
+
 if (prime) {
 	println(i + " is prime!");
-}else println(i + " is not prime, sorry.");
+} else println(i + " is not prime, sorry.");

@@ -2,6 +2,7 @@
 
 int count = 2;
 int primeCount = 0;
+
 while (primeCount < 1000) {
 	boolean prime = true;
 	int denom = 2;
@@ -17,4 +18,3 @@ while (primeCount < 1000) {
 	count++;
 }
 println("Finished!")
-			

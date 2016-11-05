@@ -31,6 +31,8 @@ switch (choice) {
 	case 4:
 		println(num1 + " divided by " + num2 + " is " + myCalc.divide(num1, num2) + ".");
 		break;
+  case 5:
+    println("The remainder of " + num1 + )
 	default:
 		println("That was not a vaild option!");
 		break;

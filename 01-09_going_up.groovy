@@ -3,11 +3,14 @@
 int step = 0;
 boolean rise = true;
 boolean finished = false;
+
 print("Please enter a positive integer (-1 to finish): ");
 int i = Integer.parseInt(System.console().readLine());
+
 if (i == -1) {
 	finished = true;
 } else step = i;
+
 while (!finished) {
 	print("Please enter another positive integer (-1 to finish): ");
 	int j = Integer.parseInt(System.console().readLine());
@@ -18,6 +21,7 @@ while (!finished) {
 	}
 	step++; 
 }
+
 if (rise) {
 	println("Yes.");
 } else println("No.");

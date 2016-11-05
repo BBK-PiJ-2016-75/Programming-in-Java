@@ -6,6 +6,7 @@ boolean nearPos = false;
 boolean nearNeg = false;
 int posCount = target + 1;
 int negCount = target - 1;
+
 while (!nearPos) {
 	int denom = 2;
 	while (denom < posCount) {
@@ -16,6 +17,7 @@ while (!nearPos) {
 	}
 	nearPos = true;
 }
+
 while (!nearNeg) {
 	int denom = 2;
 	while (denom < negCount) {
@@ -26,6 +28,7 @@ while (!nearNeg) {
 	}
 	nearNeg = true;
 }
+
 int posDiff = posCount - target;
 int negDiff = target - negCount;
 if (posDiff < negDiff) {

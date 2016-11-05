@@ -6,6 +6,7 @@ print("Now, please enter the second integer: ");
 int second = Integer.parseInt(System.console().readLine());
 print("Finally, please enter the third one: ");
 int third = Integer.parseInt(System.console().readLine());
+
 if ((first >= second) && (first >= third)) {
 	if (second >= third) {
 		println(third + ", " + second + ", " + first);

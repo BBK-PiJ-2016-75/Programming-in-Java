@@ -1,6 +1,7 @@
 //Program to find and print all of the prime numbers up to 1,000.
 
 int count = 2;
+
 while (count < 1000) {
 	boolean prime = true;
 	int denom = 2;
@@ -15,4 +16,3 @@ while (count < 1000) {
 	count++;
 }
 println("Finished!")
-			
