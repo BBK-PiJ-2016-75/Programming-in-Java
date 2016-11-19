@@ -8,7 +8,7 @@ println("Your purchase cost £" + cost + " and you paid £" + payment + ", so yo
 
 //Convert the change into ints for pounds and pence.
 int changePounds = (int) change;
-int changePence = (int)((change % 1.0) * 100);
+int changePence = (int) (Math.round(change * 100)) % 100;
 
 //Determine how many of each note and coin is needed to make the correct change.
 int fifties = changePounds / 50;
