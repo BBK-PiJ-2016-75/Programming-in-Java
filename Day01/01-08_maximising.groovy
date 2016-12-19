@@ -1,3 +1,5 @@
+//Program that selects the highest integer entered.
+
 int max = 0;
 boolean finished = false;
 

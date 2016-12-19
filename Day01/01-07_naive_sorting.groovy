@@ -9,12 +9,18 @@ int third = Integer.parseInt(System.console().readLine());
 
 if ((first >= second) && (first >= third)) {
 	if (second >= third) {
-		println(third + ", " + second + ", " + first);
-	} else println(second + ", " + third + ", " + first);
+		println(third + ", " + second + ", " + first + ".");
+	} else {
+    println(second + ", " + third + ", " + first + ".");
+  }
 } else if ((second >= first) && (second >= third)) {
 	if (first >= third) {
-		println(third + ", " + first + ", " + second);
-	} else println(first + ", " + third + ", " + second);
+		println(third + ", " + first + ", " + second + ".");
+	} else {
+    println(first + ", " + third + ", " + second + ".");
+  }
 } else if (first >= second) {
-	println(second + ", " + first + ", " + third);
-} else println(first + ", " + second + ", " + third);
+	println(second + ", " + first + ", " + third + ".");
+} else {
+  println(first + ", " + second + ", " + third + ".");
+}

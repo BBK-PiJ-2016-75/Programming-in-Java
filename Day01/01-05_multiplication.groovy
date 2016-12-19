@@ -1,4 +1,5 @@
-//This program multiplies two integers supplied by the user, without using the "*" operator.
+//This program multiplies two integers supplied by the user,
+//without using the "*" operator.
 
 int total = 0;
 int count = 0;
@@ -8,12 +9,16 @@ int i = Integer.parseInt(System.console().readLine());
 print("Now, please enter the second integer: ");
 int j = Integer.parseInt(System.console().readLine());
 
+//Create alternate variables that might be manipulated.
 int iAlt = i;
 int jAlt = j;
+
+//If multiplying by a negative number.
 if (jAlt < 0) {
-	iAlt = -iAlt 
+	iAlt = -iAlt; 
 	jAlt = -jAlt;
 }
+
 while (count < jAlt) {
 	total += iAlt;
 	count++;

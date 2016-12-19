@@ -12,9 +12,13 @@ if (i < 2) {
 } else while ((j < i) && (prime)) {
 	if (i % j == 0) {
 		prime = false;
-	} else j++;
+	} else {
+    j++;
+  }
 }
 
 if (prime) {
 	println(i + " is prime!");
-} else println(i + " is not prime, sorry.");
+} else {
+  println(i + " is not prime, sorry.");
+}
