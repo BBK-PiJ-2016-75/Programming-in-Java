@@ -13,7 +13,9 @@ while (!nearPos) {
 		if (posCount % denom == 0) {
 			posCount++;
 			denom = 2;
-		} else denom++;
+		} else {
+      denom++;
+    }
 	}
 	nearPos = true;
 }
@@ -24,7 +26,9 @@ while (!nearNeg) {
 		if (negCount % denom == 0) {
 			negCount--;
 			denom = 2;
-		} else denom++;
+		} else {
+      denom++;
+    }
 	}
 	nearNeg = true;
 }
@@ -35,4 +39,6 @@ if (posDiff < negDiff) {
 	println("The nearest prime number is " + posCount + ".");
 } else if (negDiff < posDiff) {
 	println("The nearest prime number is " + negCount + ".");
-}else println("The nearest prime numbers are " + negCount + " and " + posCount + ".");
+}else {
+  println("The nearest prime numbers are " + negCount + " and " + posCount + ".");
+}

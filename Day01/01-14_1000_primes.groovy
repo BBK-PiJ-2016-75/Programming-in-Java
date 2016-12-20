@@ -9,7 +9,9 @@ while (primeCount < 1000) {
 	while ((denom < count) && (prime)) {
 		if (count % denom == 0) {
 			prime = false;
-		} else denom++;
+		} else {
+      denom++;
+    }
 	}
 	if (prime) {
 		print(count + " ");
@@ -17,4 +19,5 @@ while (primeCount < 1000) {
 	}
 	count++;
 }
-println("Finished!")
+
+println("Finished!");

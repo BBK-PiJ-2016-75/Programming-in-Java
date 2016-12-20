@@ -1,5 +1,5 @@
-//Program to print a pyramid on the screen which is made up of increasing numbers,
-//from top to bottom. It involves an infinite loop.
+//Program to print a pyramid on the screen which is made up of increasing
+//numbers, from top to bottom. It involves an infinite loop.
 
 int count = 1;
 
