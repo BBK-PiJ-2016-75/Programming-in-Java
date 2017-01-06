@@ -1,17 +1,17 @@
 class Point {
-	int x = 0;
-	int y = 0;
+  int x = 0;
+  int y = 0;
 }
 
 // This method increments the int by 1 and
-// moves the point to the right.
+// moves the point to the right 1.
 void increment(Point point, int n) {
-	n = n + 1;
-	point.x = point.x + 1;
-	point = null;
-	println(" At the end of the method...");
-	println(" The integer is " + n);
-	println(" The point is " + point);
+  n = n + 1;
+  point.x = point.x + 1;
+  point = null;
+  println(" At the end of the method...");
+  println(" The integer is " + n);
+  println(" The point is " + point);
 }
 
 // Program execution starts here.

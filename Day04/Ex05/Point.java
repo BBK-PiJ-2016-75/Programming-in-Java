@@ -1,7 +1,6 @@
 public class Point {
-  
-  public double x;
-  public double y;
+  public double x = 0;
+  public double y = 0;
   
   public double distanceTo(Point target) {
     return Math.sqrt(Math.pow(target.x - this.x, 2) + (Math.pow(target.y - this.y, 2)));
@@ -30,9 +29,9 @@ public class Point {
   }
   
   public Point opposite() {
-    Point clone = new Point();
-    clone.x = -this.x;
-    clone.y = -this.y;
-    return clone;
+    Point negClone = new Point();
+    negClone.x = -this.x;
+    negClone.y = -this.y;
+    return negClone;
   }
 }

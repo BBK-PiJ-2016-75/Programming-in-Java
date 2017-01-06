@@ -11,10 +11,10 @@ class UnitMatrix {
 				if (i == j) {
 					println("1 ");
 				} else {
-				println("0 ");
+          println("0 ");
 				}
 			}		
-			println ""
+			println "";
 		}
 	}
 }

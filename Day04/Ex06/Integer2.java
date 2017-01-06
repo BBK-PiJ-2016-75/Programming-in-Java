@@ -1,13 +1,12 @@
 public class Integer2 {
+  private int value = 0;
   
-  private int value;
+  public void setValue(int number) {
+    this.value = number;
+  }
   
   public int getValue() {
     return value;
-  }
-  
-  public void setValue(int number) {
-    value = number;
   }
   
   public boolean isEven() {
