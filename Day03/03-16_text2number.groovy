@@ -1,21 +1,46 @@
-//Programe to turn the enetered text into a palindrome.
+//Program to turn the entered number, which could include commas and a decimal
+//point, into a double, and then halve it. Cannot use Double.parseDouble().
+
 print("Please enter a number, using commas and decimal points, if required: ");
 String numberEntered = System.console().readLine();
-String numberScreened = "";
-String decimalScreened = "";
+
+//Take the entered number and divide it into integer and fractional parts.
+String integerPart = "";
+String fractionalPart = "";
 boolean foundDecimal = false;
-int decimalPlaces = 0;
 for (int i = 0; i < numberEntered.length(); i++) {
   if (!foundDecimal && Character.isDigit(numberEntered.charAt(i))) {
-    numberScreened += numberEntered.charAt(i);
-  } else if (!foundDecimal && numberEntered.charAt(i) == '.') {
-    decimalPlaces = i;
-    foundDecimal = true;
+    integerPart += numberEntered.charAt(i);
   } else if (foundDecimal && Character.isDigit(numberEntered.charAt(i))) {
-    decimalScreened += numberEntered.charAt(i);
+    fractionalPart += numberEntered.charAt(i);
+  } else if (!foundDecimal && numberEntered.charAt(i) == '.') {
+    foundDecimal = true;
+  } 
+}
+
+//Assemble the parts into a string, convert it to a double, then halve it.
+String numberAssembled = integerPart + "." + fractionalPart;
+double number = (double) Double.valueOf(numberAssembled);
+double halved = number / 2;
+
+//Take halved amount, convert it to a string, then include the commas needed.
+String commasNeeded = halved.toString();
+String finalHalved = "";
+foundDecimal = false;
+int count = 0;
+for (int i = commasNeeded.length() - 1; i >= 0; i--) {
+  if (!foundDecimal && commasNeeded.charAt(i) != '.') {
+    finalHalved = commasNeeded.charAt(i).toString() + finalHalved;
+  } else if (!foundDecimal && commasNeeded.charAt(i) == '.') {
+    finalHalved = commasNeeded.charAt(i).toString() + finalHalved;
+    foundDecimal = true;
+  } else if (foundDecimal) {
+    if (count > 0 && count % 3 == 0) {
+      finalHalved = "," + finalHalved;
+    }
+    finalHalved = commasNeeded.charAt(i).toString() + finalHalved;
+    count++;
   }
 }
-int wholeNumber = Integer.parseInt(numberScreened);
-int decimalNumber = Integer.parseInt(decimalScreened);
-println("You entered: " + wholeNumber + "." + decimalNumber);
-println("Half of that number is: " + wholeNumber / 2 + "." + (decimalNumber * 10) / 2);
+
+println("Half of " + numberEntered + " is " + finalHalved + ".");

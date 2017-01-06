@@ -1,4 +1,4 @@
-//This program adds a number of terms together in order to calculate Pi.
+//Program which adds a chosen number of terms together in order to calculate Pi.
 
 int base = 4;
 double total = 0;

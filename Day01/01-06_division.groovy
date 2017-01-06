@@ -1,4 +1,4 @@
-//This program divides one integer by another, giving the quotient and the
+//Program which divides one integer by another, giving the quotient and the
 //remainder, without using the "/" or "%" operators.
 
 int div = 0;

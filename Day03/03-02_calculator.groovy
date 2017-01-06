@@ -1,4 +1,5 @@
-//Program that takes two numbers from the user, and then performs the operation chosen.
+//Program that takes two numbers from the user, and then performs
+//the chosen operation.
 
 print("Enter the first number: ");
 double first = Double.parseDouble(System.console().readLine());

@@ -9,8 +9,8 @@ if ((level >= 1) && (level <=25)) {
 	while (step <= level) {
 		int space = (50 - (2 * step));
 		while (space > 0) {
-				print(" ");
-				space--;	
+			print(" ");
+			space--;	
 		}
 		int block = step;
 		while (block > 0) {
@@ -19,7 +19,7 @@ if ((level >= 1) && (level <=25)) {
       } else {
         print(step);
       }
-    block--;
+      block--;
     }
 		println("");
 		step++;

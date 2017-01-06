@@ -1,10 +1,13 @@
-//Program to display to the user what notes and coins would be recieved as change for a purchase.
+//Program to display to the user what notes and coins would be recieved as 
+//change following a user-defined purchase.
+
 print("Please enter the cost of the purchase: ");
 double cost = Double.parseDouble(System.console().readLine());
 print("Now, please enter the payment amount: ");
 double payment = Double.parseDouble(System.console().readLine());
 double change = payment - cost;
-println("Your purchase cost £" + cost + " and you paid £" + payment + ", so your change will be £" + change + ".");
+println("Your purchase cost £" + cost + " and you paid £" + payment +
+    ", so your change will be £" + change + ".");
 
 //Convert the change into ints for pounds and pence.
 int changePounds = (int) change;

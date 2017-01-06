@@ -1,4 +1,4 @@
-//This program simulates a game of Rock, Paper, Scissors where there are two
+//Program which simulates a game of Rock, Paper, Scissors where there are two
 //players, whose choices are entered until one wins by a lead of 3 points.
 
 int p1Score = 0;

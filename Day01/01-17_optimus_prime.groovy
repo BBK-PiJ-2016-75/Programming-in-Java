@@ -39,6 +39,6 @@ if (posDiff < negDiff) {
 	println("The nearest prime number is " + posCount + ".");
 } else if (negDiff < posDiff) {
 	println("The nearest prime number is " + negCount + ".");
-}else {
+} else {
   println("The nearest prime numbers are " + negCount + " and " + posCount + ".");
 }

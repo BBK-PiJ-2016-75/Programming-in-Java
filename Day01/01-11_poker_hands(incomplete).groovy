@@ -16,11 +16,10 @@ int diamTot = 0;
 println("Please provide 5 cards' ranks (1,2,3,4,5,6,7,8,9,10,J,Q,K) and suits.");
 print("Please enter your first card rank: ");
 String card = System.console().readLine;
-If (card.charAt(0) == 'J') {
+if (card.charAt(0) == 'J') {
   card1 = 11;
 } else if (card.charAt(0) == 'Q') {
   card1 = 12;
 }
 print("Now, please enter your first card suit: ");
-Str suit = System.console().readLine
- 
+Str suit = System.console().readLine;

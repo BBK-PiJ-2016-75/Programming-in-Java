@@ -13,9 +13,10 @@ while (count < 1000) {
     }
 	}
 	if (prime) {
-		print(count + " ");
+		print(count + ", ");
 	}
 	count++;
 }
+println("");
 
 println("Finished!");

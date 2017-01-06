@@ -1,4 +1,4 @@
-//This program multiplies two integers supplied by the user,
+//Program which multiplies two integers supplied by the user,
 //without using the "*" operator.
 
 int total = 0;

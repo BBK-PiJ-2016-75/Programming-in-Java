@@ -1,3 +1,6 @@
+//Program that creates two rectangles based on given coordinates, then checks 
+//whether or not a given point falls within the area of the first, second or both.
+
 class Point {
 	double x;
 	double y;
@@ -15,13 +18,13 @@ Point topLeft2 = new Point();
 Point bottomRight2 = new Point();
 
 //Create first rectangle.
-print("Please enter the X coordinate of the top left corner of the first rectangle: ");
+print("Please enter the X coordinate of the top-left corner of the first rectangle: ");
 topLeft1.x = Double.parseDouble(System.console().readLine());
-print("Next, please enter the Y coordinate of the top left corner: ");
+print("Next, please enter the Y coordinate of the top-left corner: ");
 topLeft1.y = Double.parseDouble(System.console().readLine());
-print("And now, please enter the X coordinate of the bottom right corner of the first rectangle: ");
+print("And now, please enter the X coordinate of the bottom-right corner of the first rectangle: ");
 bottomRight1.x = Double.parseDouble(System.console().readLine());
-print("Finally, please enter the Y coordinate of the bottom right corner: ");
+print("Finally, please enter the Y coordinate of the bottom-right corner: ");
 bottomRight1.y = Double.parseDouble(System.console().readLine());
 
 Rectangle rect1 = new Rectangle();
@@ -29,13 +32,13 @@ rect1.upLeft = topLeft1;
 rect1.downRight = bottomRight1;
 
 //Create second rectangle.
-print("Please enter the X coordinate of the top left corner of the second rectangle: ");
+print("Please enter the X coordinate of the top-left corner of the second rectangle: ");
 topLeft2.x = Double.parseDouble(System.console().readLine());
-print("Next, please enter the Y coordinate of the top left corner: ");
+print("Next, please enter the Y coordinate of the top-left corner: ");
 topLeft2.y = Double.parseDouble(System.console().readLine());
-print("And now, please enter the X coordinate of the bottom right corner of the second rectangle: ");
+print("And now, please enter the X coordinate of the bottom-right corner of the second rectangle: ");
 bottomRight2.x = Double.parseDouble(System.console().readLine());
-print("Finally, please enter the Y coordinate of the bottom right corner: ");
+print("Finally, please enter the Y coordinate of the bottom-right corner: ");
 bottomRight2.y = Double.parseDouble(System.console().readLine());
 
 Rectangle rect2 = new Rectangle();

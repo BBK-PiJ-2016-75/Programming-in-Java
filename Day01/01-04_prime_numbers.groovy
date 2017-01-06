@@ -1,4 +1,4 @@
-//This program informs the user whether or not the number entered is prime.
+//Program to inform the user whether or not the number entered is prime.
 
 boolean prime = true;
 int i = 0;

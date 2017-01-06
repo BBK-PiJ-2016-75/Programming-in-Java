@@ -1,4 +1,4 @@
-//This program sorts three integers that the user inputs, in ascending order.
+//Program which sorts three integers that the user inputs, in ascending order.
 
 print("Please enter the first integer: ");
 int first = Integer.parseInt(System.console().readLine());
