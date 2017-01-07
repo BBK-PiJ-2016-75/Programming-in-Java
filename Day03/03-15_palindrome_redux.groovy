@@ -28,7 +28,7 @@ for (int i = 0; i < (lowerCaseText.length() / 2) && palindrome; i++) {
 }
 
 if (palindrome) {
-  println("The text you entered is either a strict or relaxed palindrome.");
+  println("Yes! The text you entered is either a strict or relaxed palindrome.");
 } else {
-  println("The text you entered is neither a strict nor relaxed palindrome.");
+  println("Sorry, buddy! The text you entered is neither a strict nor relaxed palindrome.");
 }
