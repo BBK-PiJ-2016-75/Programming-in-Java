@@ -1,10 +1,10 @@
 public class ArrayCopierTester {
   
   public static void main(String[] args) {
-    int[] source = { 1, 2, 3, 4, 5 };
-    int[] destinationOne = { 6, 7, 8, };
-    int[] destinationTwo = { 6, 7, 8, 9, 10 };
-    int[] destinationThree = { 6, 7, 8, 9, 10, 11, 12 };
+    int[] source = {1, 2, 3, 4, 5};
+    int[] destinationOne = {6, 7, 8,};
+    int[] destinationTwo = {6, 7, 8, 9, 10};
+    int[] destinationThree = {6, 7, 8, 9, 10, 11, 12};
     System.out.println("The source array is " + printArray(source));
     System.out.println("The first destination array is "
         + printArray(destinationOne));

@@ -11,10 +11,29 @@ public class MatrixChecker {
   }
   
   public boolean isSymmetrical(int[][] array) {
-    return true;
+    boolean symmetrical = true;
+    if (array.length != array[0].length) {
+      symmetrical = false;
+    }
+    for (int i = 0; symmetrical && i < array.length; i++) {
+      for (int j = 0; symmetrical && j < array[0].length; j++) {
+        if (array[i][j] != array[j][i]) {
+          symmetrical = false;
+        }
+      }
+    }
+    return symmetrical;
   }
   
   public boolean isTriangular(int[][] array) {
-    return true;
+    boolean triangular = true;
+    for (int i = 1; i < array.length; i++) {
+      for (int j = 0; j < array[0].length; j++) {
+        if (i > j && array[i][j] != 0) {
+          triangular = false;
+        }
+      }
+    }
+    return triangular;
   }
 }
