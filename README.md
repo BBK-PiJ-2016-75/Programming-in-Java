@@ -1,2 +1,2 @@
-# Programming-in-Java
-My coding solutions to class exercises.
+# Programming in Java
+My answers to the class exercises.
