@@ -1,9 +1,14 @@
-public class HospitalManager {
-	private Patient firstPatient = null;
+public class DoublyLinkedHospitalManager {
+	private DoublyLinkedPatient firstPatient = null;
+  private DoublyLinkedPatient lastPatient = null;
   private int listCount = 0;
   
-  public Patient getFirstPatient() {
+  public DoublyLinkedPatient getFirstPatient() {
     return this.firstPatient;
+  }
+  
+  public DoublyLinkedPatient getLastPatient() {
+    return this.lastPatient;
   }
   
   public int getListCount() {
@@ -11,19 +16,22 @@ public class HospitalManager {
   }
 	
   // this is a member method of class HospitalManager
-	public void addPatient(Patient newPatient) {
+	public void addPatient(DoublyLinkedPatient newPatient) {
     listCount++;
     if (firstPatient == null) {
       firstPatient = newPatient;
+      lastPatient = newPatient;
       return;
     }
-    Patient current = firstPatient;
+    DoublyLinkedPatient current = firstPatient;
     while (current.getNextPatient() != null) {
       // this means we are not yet at the end of the list
       current = current.getNextPatient();
     }
     // at this point, current points to the last patient
     current.setNextPatient(newPatient);
+    newPatient.setPreviousPatient(current);
+    lastPatient = newPatient;
   }
 
   // this is a member method of class HospitalManager
@@ -36,15 +44,26 @@ public class HospitalManager {
     if (firstPatient.getName().equals(name)) {
       // first patient in the list must be removed
       firstPatient = firstPatient.getNextPatient();
+      firstPatient.setPreviousPatient(null);
       listCount--;
       return true;
     }
-    Patient current = firstPatient;
+    if (lastPatient.getName().equals(name)) {
+      //last patient in the list must be removed
+      lastPatient = lastPatient.getPreviousPatient();
+      lastPatient.setNextPatient(null);
+      listCount--;
+      return true;
+    }
+    DoublyLinkedPatient current = firstPatient;
     while (current.getNextPatient() != null) {
-      if (current.getNextPatient().getName().equals(name)) {
-        // We found it! It is the next one!
-        // Now link this patient to the one after the next
-        current.setNextPatient(current.getNextPatient().getNextPatient());
+      if (current.getName().equals(name)) {
+        // We found it! It is this one!
+        // Now link the next and previous patients to each other.
+        DoublyLinkedPatient previous = current.getPreviousPatient();
+        DoublyLinkedPatient next = current.getNextPatient();
+        previous.setNextPatient(next);
+        next.setPreviousPatient(previous);
         listCount--;
         return true;
       }
@@ -53,14 +72,26 @@ public class HospitalManager {
     return false;
   }
   
-  public void printPatientList() {
+  public void printListForwards() {
     if (firstPatient == null) {
       return;
     }
-    Patient current = firstPatient;
+    DoublyLinkedPatient current = firstPatient;
     while (current.getNextPatient() != null) {
       System.out.println(current.getName());
       current = current.getNextPatient();
+    }
+    System.out.println(current.getName());
+  }
+  
+  public void printListBackwards() {
+    if (firstPatient == null) {
+      return;
+    }
+    DoublyLinkedPatient current = lastPatient;
+    while (current.getPreviousPatient() != null) {
+      System.out.println(current.getName());
+      current = current.getPreviousPatient();
     }
     System.out.println(current.getName());
   }
