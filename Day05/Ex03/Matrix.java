@@ -1,6 +1,6 @@
 public class Matrix {
   
-  private int[][] matrix;
+  private int[][] matrix = null;
   
   public Matrix(int rows,int columns) {
     this.matrix = new int[rows][columns];

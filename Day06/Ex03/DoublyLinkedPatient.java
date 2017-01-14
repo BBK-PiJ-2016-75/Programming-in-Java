@@ -1,17 +1,15 @@
 public class DoublyLinkedPatient {
   
-  private String name;
-  private int age;
-  private String illness;
-  private DoublyLinkedPatient nextPatient;
-  private DoublyLinkedPatient previousPatient;
+  private String name = null;
+  private int age = 0;
+  private String illness = null;
+  private DoublyLinkedPatient nextPatient = null;
+  private DoublyLinkedPatient previousPatient = null;
   
   public DoublyLinkedPatient(String name, int age, String illness) {
     this.name = name;
     this.age = age;
     this.illness = illness;
-    this.nextPatient = null; // Pointer to another patient!
-    this.previousPatient = null;
   }
   
   //Sets the patient's name.
