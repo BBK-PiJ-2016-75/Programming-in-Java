@@ -1,6 +1,11 @@
 public class PointTester {
 
   public static void main(String[] args) {
+    PointTester tester = new PointTester();
+    tester.run();
+  }
+  
+  public void run() {
     Point first = new Point();
     first.x = 3.0;
     first.y = 4.0;

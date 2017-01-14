@@ -1,6 +1,11 @@
 public class MatrixTester {
   
   public static void main(String[] args) {
+    MatrixTester tester = new MatrixTester();
+    tester.run();
+  }
+  
+  public void run() {
     Matrix myMatrix = new Matrix(3, 3);
     myMatrix.prettyPrint();
     myMatrix.setElement(1, 1, 999);
@@ -12,5 +17,6 @@ public class MatrixTester {
     myMatrix.prettyPrint();
     String str = myMatrix.toString();
     System.out.println(str);
+    System.out.println("Testing complete!");
   }
 }

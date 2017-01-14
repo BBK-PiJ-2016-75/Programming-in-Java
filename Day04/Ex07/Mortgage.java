@@ -1,4 +1,5 @@
 public class Mortgage {
+  
   private int loanAmount = 0;
   private int years = 0;
   private double interestRate = 0.0;

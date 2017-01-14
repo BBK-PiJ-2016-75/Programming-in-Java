@@ -1,6 +1,7 @@
 public class Point {
-  public double x = 0;
-  public double y = 0;
+  
+  public double x = 0.0;
+  public double y = 0.0;
   
   public double distanceTo(Point target) {
     return Math.sqrt(Math.pow(target.x - this.x, 2) + (Math.pow(target.y - this.y, 2)));

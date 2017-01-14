@@ -1,4 +1,5 @@
 public class Integer2 {
+  
   private int value = 0;
   
   public void setValue(int number) {

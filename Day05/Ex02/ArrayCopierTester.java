@@ -1,6 +1,11 @@
 public class ArrayCopierTester {
   
   public static void main(String[] args) {
+    ArrayCopierTester tester = new ArrayCopierTester();
+    tester.run();
+  }
+  
+  public void run() {
     int[] source = {1, 2, 3, 4, 5};
     int[] destinationOne = {6, 7, 8,};
     int[] destinationTwo = {6, 7, 8, 9, 10};
