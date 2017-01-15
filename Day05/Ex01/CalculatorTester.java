@@ -5,7 +5,7 @@ public class CalculatorTester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     System.out.print("5 + 7 is ");
     Calculator.add(5, 7);
     System.out.print("42 - 18 is ");

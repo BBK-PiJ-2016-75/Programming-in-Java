@@ -5,7 +5,7 @@ public class CircularHospitalManagerTester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     CircularHospitalManager myHospital = new CircularHospitalManager();
     myHospital.addPatient(new CircularPatient("John Doe", 45, "Palsy"));
     myHospital.addPatient(new CircularPatient("Jane Doe", 35, "Palsy"));
@@ -17,15 +17,23 @@ public class CircularHospitalManagerTester {
     myHospital.addPatient(new CircularPatient("Peter Doe", 45, "Palsy"));
     myHospital.addPatient(new CircularPatient("Paul Doe", 45, "Palsy"));
     myHospital.addPatient(new CircularPatient("Ringo Doe", 45, "Palsy"));
-    System.out.println(myHospital.getListCount());
+    System.out.println("------------");
+    System.out.println("Total number of patients in list: " + myHospital.getListCount());
+    System.out.println("First paitent name: " + myHospital.getFirstPatient().getName());
     myHospital.printPatientList();
-    System.out.println(myHospital.getFirstPatient().getName());
     myHospital.deletePatient("George Doe");
     myHospital.deletePatient("Peter Doe");
     myHospital.deletePatient("John Doe");
     myHospital.deletePatient("Ringo Doe");
-    System.out.println(myHospital.getListCount());
+    System.out.println("------------");
+    System.out.println("Total number of patients in list: " + myHospital.getListCount());
+    System.out.println("First paitent name: " + myHospital.getFirstPatient().getName());
     myHospital.printPatientList();
-    System.out.println(myHospital.getFirstPatient().getName());
+    myHospital.addPatient(new CircularPatient("Luke Skywalker", 45, "Palsy"));
+    myHospital.deletePatient("Darth Vader");
+    System.out.println("------------");
+    System.out.println("Total number of patients in list: " + myHospital.getListCount());
+    System.out.println("First paitent name: " + myHospital.getFirstPatient().getName());
+    myHospital.printPatientList();
   }
 }

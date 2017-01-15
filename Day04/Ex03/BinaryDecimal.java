@@ -46,7 +46,7 @@ public class BinaryDecimal {
     converter.run();
   }
   
-  public void run() {
+  private void run() {
     System.out.print("Please enter \"1\" to covert a binary number to decimal,\nor enter \"2\" to convert a decimal number to binary: ");
     int choice = Integer.parseInt(System.console().readLine());
     if (choice == 1) {

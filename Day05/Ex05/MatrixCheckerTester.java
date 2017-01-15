@@ -5,7 +5,7 @@ public class MatrixCheckerTester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     MatrixChecker myChecker = new MatrixChecker();
     
     //Check if arrays are symmetrical.

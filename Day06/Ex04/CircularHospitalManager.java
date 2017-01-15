@@ -36,22 +36,18 @@ public class CircularHospitalManager {
       // list is empty, nothing to remove
       return false;
     }
-    if (firstPatient.getName().equals(name)) {
-      // first patient in the list must be removed
-      firstPatient = firstPatient.getNextPatient();
+    CircularPatient current = firstPatient;
+    while (!current.getNextPatient().getName().equals(name) 
+        && current.getNextPatient() != firstPatient) {
+      current = current.getNextPatient();
+    }
+    if (current.getNextPatient().getName().equals(name)) {
+      if (current.getNextPatient() == firstPatient) {
+        firstPatient = current.getNextPatient().getNextPatient();
+      }
+      current.setNextPatient(current.getNextPatient().getNextPatient());
       listCount--;
       return true;
-    }
-    CircularPatient current = firstPatient;
-    while (current.getNextPatient() != firstPatient) {
-      if (current.getNextPatient().getName().equals(name)) {
-        // We found it! It is the next one!
-        // Now link this patient to the one after the next
-        current.setNextPatient(current.getNextPatient().getNextPatient());
-        listCount--;
-        return true;
-      }
-      current = current.getNextPatient();
     }
     return false;
   }

@@ -5,7 +5,7 @@ public class MatrixTester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     Matrix myMatrix = new Matrix(3, 3);
     myMatrix.prettyPrint();
     myMatrix.setElement(1, 1, 999);

@@ -5,7 +5,7 @@ public class MortgageTester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     Mortgage myMortgage = new Mortgage();
     System.out.print("Please enter the total amount you wish to borrow for a mortgage: ");
     myMortgage.setLoanAmount(Integer.parseInt(System.console().readLine()));

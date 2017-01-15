@@ -5,7 +5,7 @@ public class PointTester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     Point first = new Point();
     first.x = 3.0;
     first.y = 4.0;

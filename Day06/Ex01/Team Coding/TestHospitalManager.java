@@ -5,7 +5,7 @@ public class TestHospitalManager {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
 		
     //Patient fPatient = hm.getFirstPatient();
 		//System.out.println("Patient name: " + fPatient.getName());

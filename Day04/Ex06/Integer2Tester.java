@@ -5,7 +5,7 @@ public class Integer2Tester {
     tester.run();
   }
   
-  public void run() {
+  private void run() {
     Integer2 i2 = new Integer2();
     System.out.print("Enter a number: ");
     String str = System.console().readLine();
