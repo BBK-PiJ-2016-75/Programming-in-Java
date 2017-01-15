@@ -4,6 +4,7 @@ public class Supermarket implements PersonQueue {
   private int size = 0;
   private Person head = null;
   
+  @Override
   public void insert(Person person) {
     if (size < MAX_SIZE) {
       if (head == null) {
@@ -31,6 +32,7 @@ public class Supermarket implements PersonQueue {
     System.out.println(current.getName() + ".");
   }
   
+  @Override
   public Person retrieve() {
     size--;
     Person retrieved = head;
