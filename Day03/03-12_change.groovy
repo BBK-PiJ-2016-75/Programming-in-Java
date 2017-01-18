@@ -1,4 +1,4 @@
-//Program to display to the user what notes and coins would be recieved as 
+//Program to display to the user what notes and coins would be received as
 //change following a user-defined purchase.
 
 print("Please enter the cost of the purchase: ");

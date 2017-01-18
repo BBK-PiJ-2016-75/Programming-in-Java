@@ -1,5 +1,5 @@
 //Program that asks for a text and then counts letters in a loop and a half.
-//If the user eneters a letter that has already been counted, it exits.
+//If the user enters a letter that has already been counted, it exits.
 
 print("Please write a text: ");
 String text = System.console().readLine();

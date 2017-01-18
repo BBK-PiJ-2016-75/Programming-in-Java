@@ -32,6 +32,6 @@ switch (choice) {
 		println(first + " divided by " + second + " is " + over + ".");
 		break;
 	default:
-		println("That was not a vaild option!");
+		println("That was not a valid option!");
 		break;
 }
