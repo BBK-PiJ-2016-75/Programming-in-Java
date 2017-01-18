@@ -22,4 +22,4 @@ if (card.charAt(0) == 'J') {
   card1 = 12;
 }
 print("Now, please enter your first card suit: ");
-Str suit = System.console().readLine;
+String suit = System.console().readLine;

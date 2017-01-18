@@ -24,4 +24,4 @@ while (count < jAlt) {
 	count++;
 }
 
-println(i + " multipled by " + j + " equals " + total + ".");
+println(i + " multiplied by " + j + " equals " + total + ".");
