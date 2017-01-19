@@ -1,3 +1,5 @@
+package ex02;
+
 class Person {
   int age;
   String name;

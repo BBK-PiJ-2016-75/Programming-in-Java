@@ -1,4 +1,4 @@
-package ex05
+package ex05;
 
 //Program that takes in the coordinates of two points, creates a rectangle from
 //them as opposite corners, then prints the area and perimeter of the rectangle.

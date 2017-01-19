@@ -1,4 +1,4 @@
-package ex07
+package ex07;
 
 //Program that creates two rectangles based on given coordinates, then checks
 //whether or not a given point falls within the area of the first, second or both.

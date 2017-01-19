@@ -1,3 +1,5 @@
+package ex02;
+
 String requestUser() {
   String result = System.console().readLine();
   return result;
