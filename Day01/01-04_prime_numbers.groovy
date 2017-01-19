@@ -10,15 +10,15 @@ i = Integer.parseInt(System.console().readLine());
 if (i < 2) {
   prime = false;
 } else while ((j < i) && (prime)) {
-	if (i % j == 0) {
-		prime = false;
-	} else {
+  if (i % j == 0) {
+    prime = false;
+  } else {
     j++;
   }
 }
 
 if (prime) {
-	println(i + " is prime!");
+  println(i + " is prime!");
 } else {
   println(i + " is not prime, sorry.");
 }

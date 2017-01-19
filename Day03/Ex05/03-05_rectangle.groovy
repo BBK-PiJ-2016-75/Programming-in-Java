@@ -1,14 +1,16 @@
+package Ex05
+
 //Program that takes in the coordinates of two points, creates a rectangle from
 //them as opposite corners, then prints the area and perimeter of the rectangle.
 
 class Point {
-	double x;
-	double y;
+    double x;
+    double y;
 }
 
 class Rectangle {
-  Point upLeft;
-  Point downRight;
+    Point upLeft;
+    Point downRight;
 }
 
 //Create the opposing points.

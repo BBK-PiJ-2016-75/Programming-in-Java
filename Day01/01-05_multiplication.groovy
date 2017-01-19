@@ -15,13 +15,13 @@ int jAlt = j;
 
 //If multiplying by a negative number.
 if (jAlt < 0) {
-	iAlt = -iAlt; 
-	jAlt = -jAlt;
+  iAlt = -iAlt;
+  jAlt = -jAlt;
 }
 
 while (count < jAlt) {
-	total += iAlt;
-	count++;
+  total += iAlt;
+  count++;
 }
 
 println(i + " multiplied by " + j + " equals " + total + ".");

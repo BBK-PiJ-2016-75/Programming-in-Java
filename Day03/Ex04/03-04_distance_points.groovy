@@ -1,3 +1,5 @@
+package Ex04
+
 //Program to plot the coordinates of three points, and then see which two are
 //closest.
 

@@ -1,9 +1,11 @@
-//Program that creates two rectangles based on given coordinates, then checks 
+package Ex07
+
+//Program that creates two rectangles based on given coordinates, then checks
 //whether or not a given point falls within the area of the first, second or both.
 
 class Point {
-	double x;
-	double y;
+  double x;
+  double y;
 }
 
 class Rectangle {

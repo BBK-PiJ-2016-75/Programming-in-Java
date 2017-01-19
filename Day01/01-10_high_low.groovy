@@ -9,28 +9,28 @@ print("Please enter a positive integer (-1 to finish): ");
 int i = Integer.parseInt(System.console().readLine());
 
 if (i == -1) {
-	finished = true;
+  finished = true;
 } else {
   step = i;
 }
 
 while (!finished) {
-	print("Please enter another positive integer (-1 to finish): ");
-	int j = Integer.parseInt(System.console().readLine());
-	if (j == -1) {
-		finished = true;
-	} else if (j != (step + 1) && j != (step - 1)) {
-		sequence = false;
-	}
-	if (j < step) {
-		step--;
-	} else {
+  print("Please enter another positive integer (-1 to finish): ");
+  int j = Integer.parseInt(System.console().readLine());
+  if (j == -1) {
+    finished = true;
+  } else if (j != (step + 1) && j != (step - 1)) {
+    sequence = false;
+  }
+  if (j < step) {
+    step--;
+  } else {
     step++;
   }
 }
 
 if (sequence) {
-	println("Yes.");
+  println("Yes.");
 } else {
   println("No.");
 }

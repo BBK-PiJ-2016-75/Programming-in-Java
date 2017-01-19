@@ -3,7 +3,7 @@
 
 int div = 0;
 int rem = 0;
-boolean notZero = true; 
+boolean notZero = true;
 
 print("Please enter the first integer: ");
 int i = Integer.parseInt(System.console().readLine());
@@ -14,17 +14,17 @@ int j = Integer.parseInt(System.console().readLine());
 int iAlt = i;
 
 if (j == 0) {
-	notZero = false;
+  notZero = false;
 }
 
 while (((iAlt - j) >= 0) && (notZero)) {
-	iAlt -= j;
-	div++;
+  iAlt -= j;
+  div++;
 }
 
 if (!notZero) {
-	println("You cannot divide by zero!");
+  println("You cannot divide by zero!");
 } else {
-	rem = iAlt;
-	println(i + " divided by " + j + " is " + div + ", remainder " + rem + ".");
+  rem = iAlt;
+  println(i + " divided by " + j + " is " + div + ", remainder " + rem + ".");
 }

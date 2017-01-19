@@ -8,37 +8,37 @@ int posCount = target + 1;
 int negCount = target - 1;
 
 while (!nearPos) {
-	int denom = 2;
-	while (denom < posCount) {
-		if (posCount % denom == 0) {
-			posCount++;
-			denom = 2;
-		} else {
+  int denom = 2;
+  while (denom < posCount) {
+    if (posCount % denom == 0) {
+      posCount++;
+      denom = 2;
+    } else {
       denom++;
     }
-	}
-	nearPos = true;
+  }
+  nearPos = true;
 }
 
 while (!nearNeg) {
-	int denom = 2;
-	while (denom < negCount) {
-		if (negCount % denom == 0) {
-			negCount--;
-			denom = 2;
-		} else {
+  int denom = 2;
+  while (denom < negCount) {
+    if (negCount % denom == 0) {
+      negCount--;
+      denom = 2;
+    } else {
       denom++;
     }
-	}
-	nearNeg = true;
+  }
+  nearNeg = true;
 }
 
 int posDiff = posCount - target;
 int negDiff = target - negCount;
 if (posDiff < negDiff) {
-	println("The nearest prime number is " + posCount + ".");
+  println("The nearest prime number is " + posCount + ".");
 } else if (negDiff < posDiff) {
-	println("The nearest prime number is " + negCount + ".");
+  println("The nearest prime number is " + negCount + ".");
 } else {
   println("The nearest prime numbers are " + negCount + " and " + posCount + ".");
 }

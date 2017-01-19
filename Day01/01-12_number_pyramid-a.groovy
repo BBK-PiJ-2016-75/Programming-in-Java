@@ -4,11 +4,11 @@
 int count = 1;
 
 while (count > 0) {
-	int step = count;
-	while (step > 0) {
-		print(count);
-		step--;
-	}
-	println("");
-	count++;
+  int step = count;
+  while (step > 0) {
+    print(count);
+    step--;
+  }
+  println("");
+  count++;
 }

@@ -12,8 +12,8 @@ println("PS, RP, RR, RS, SP, SR, or SS).");
 while (!winner) {
   print("Please enter the players' choices: ");
   String choices = System.console().readLine();
-  if (choices.substring(0) == "PP" || choices.substring(0) == "PR" || 
-      choices.substring(0) == "PS" || choices.substring(0) == "RP" || 
+  if (choices.substring(0) == "PP" || choices.substring(0) == "PR" ||
+      choices.substring(0) == "PS" || choices.substring(0) == "RP" ||
       choices.substring(0) == "RR" || choices.substring(0) == "RS" ||
       choices.substring(0) == "SP" || choices.substring(0) == "SR" ||
       choices.substring(0) == "SS") {
