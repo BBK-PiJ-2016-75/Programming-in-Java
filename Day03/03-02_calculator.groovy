@@ -15,23 +15,23 @@ print("Please enter your choice: ");
 int choice = Integer.parseInt(System.console().readLine());
 
 switch (choice) {
-	case 1:
-		double add = first + second;
-		println(first + " plus " + second + " is " + add + ".");
-		break;
-	case 2:
-		double subtract = first - second;
-		println(first + " minus " + second + " is " + subtract + ".");
-		break;
-	case 3:
-		double times = first * second;
-		println(first + " times " + second + " is " + times + ".");
-		break;
-	case 4:
-		double over = first / second;
-		println(first + " divided by " + second + " is " + over + ".");
-		break;
-	default:
-		println("That was not a valid option!");
-		break;
+  case 1:
+    double add = first + second;
+    println(first + " plus " + second + " is " + add + ".");
+    break;
+  case 2:
+    double subtract = first - second;
+    println(first + " minus " + second + " is " + subtract + ".");
+    break;
+  case 3:
+    double times = first * second;
+    println(first + " times " + second + " is " + times + ".");
+    break;
+  case 4:
+    double over = first / second;
+    println(first + " divided by " + second + " is " + over + ".");
+    break;
+  default:
+    println("That was not a valid option!");
+    break;
 }

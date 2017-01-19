@@ -15,7 +15,7 @@ for (int i = 0; i < numberEntered.length(); i++) {
     fractionalPart += numberEntered.charAt(i);
   } else if (!foundDecimal && numberEntered.charAt(i) == '.') {
     foundDecimal = true;
-  } 
+  }
 }
 
 //Assemble the parts into a string, convert it to a double, then halve it.

@@ -1,11 +1,11 @@
-package Ex06
+package ex06
 
 //Program that creates a rectangle based on given coordinates, then checks
 //whether or not a given point falls within the rectangle's area or not.
 
 class Point {
-	double x;
-	double y;
+  double x;
+  double y;
 }
 
 class Rectangle {

@@ -1,11 +1,11 @@
-package Ex04
+package ex04
 
 //Program to plot the coordinates of three points, and then see which two are
 //closest.
 
 class Point {
-	double x;
-	double y;
+  double x;
+  double y;
 }
 
 //Define the three points.
