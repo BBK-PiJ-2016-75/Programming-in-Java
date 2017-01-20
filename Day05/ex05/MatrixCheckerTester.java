@@ -1,3 +1,5 @@
+package ex05;
+
 public class MatrixCheckerTester {
   
   public static void main(String[] args) {

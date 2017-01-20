@@ -1,3 +1,5 @@
+package ex05;
+
 public class MatrixChecker {
   
   public boolean isSymmetrical(int[] array) {

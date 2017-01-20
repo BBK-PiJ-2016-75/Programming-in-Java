@@ -1,10 +1,12 @@
+package ex01;
+
 public class CalculatorTester {
-  
+
   public static void main(String[] args) {
     CalculatorTester tester = new CalculatorTester();
     tester.run();
   }
-  
+
   private void run() {
     System.out.print("5 + 7 is ");
     Calculator.add(5, 7);
