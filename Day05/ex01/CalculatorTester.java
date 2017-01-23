@@ -1,5 +1,8 @@
 package ex01;
 
+/**
+ * Simple program to test the methods of the Calculator class.
+ */
 public class CalculatorTester {
 
   public static void main(String[] args) {

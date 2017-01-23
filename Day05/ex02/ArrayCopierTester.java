@@ -1,5 +1,8 @@
 package ex02;
 
+/**
+ * Simple program to test the methods of the ArrayCopier class.
+ */
 public class ArrayCopierTester {
 
   public static void main(String[] args) {

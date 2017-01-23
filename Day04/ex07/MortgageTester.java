@@ -1,5 +1,8 @@
 package ex07;
 
+/**
+ * Simple program to test the methods of the Mortgage class.
+ */
 public class MortgageTester {
 
   public static void main(String[] args) {

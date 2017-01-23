@@ -1,5 +1,8 @@
 package ex05;
 
+/**
+ * Simple program to test the methods of the Point class.
+ */
 public class PointTester {
 
   public static void main(String[] args) {

@@ -1,7 +1,11 @@
 package ex07;
 
+/**
+ * Program to calculate how much one would have to pay when taking out a
+ * mortgage of a given amount at a given interest rate, over a specific
+ * period of time.
+ */
 public class Mortgage {
-
   private int loanAmount = 0;
   private int years = 0;
   private double interestRate = 0.0;

@@ -1,7 +1,9 @@
 package ex06;
 
+/**
+ * A homemade version of the Integer complex type.
+ */
 public class Integer2 {
-
   private int value = 0;
 
   public void setValue(int number) {

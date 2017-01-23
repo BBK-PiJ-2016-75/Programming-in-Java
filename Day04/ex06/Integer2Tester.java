@@ -1,5 +1,8 @@
 package ex06;
 
+/**
+ * Simple program to test the methods of the Integer2 class.
+ */
 public class Integer2Tester {
 
   public static void main(String[] args) {

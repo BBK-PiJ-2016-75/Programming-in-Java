@@ -26,6 +26,11 @@ public class BinaryDecimal {
     return result;
   }
 
+  /**
+   * Calculates a number in base 2, by multiplying 2 by itself by the exponent.
+   * @param exponent the exponent to multiply base 2 by.
+   * @return the result of the calculation.
+   */
   private static int power2(int exponent) {
     return power(2, exponent);
   }

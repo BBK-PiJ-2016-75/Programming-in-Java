@@ -1,9 +1,16 @@
 package ex03;
 
+/**
+ * Creates a 2-D array.
+ */
 public class Matrix {
-
   private int[][] matrix = null;
-
+  
+  /**
+   * Constructs a new 2-D array.
+   * @param rows the number of rows in the matrix array.
+   * @param columns the number of columns in the matrix array.
+   */
   public Matrix(int rows, int columns) {
     this.matrix = new int[rows][columns];
     for (int i = 0; i < rows; i++) {
@@ -12,7 +19,13 @@ public class Matrix {
       }
     }
   }
-
+  
+  /**
+   * Sets a specific element within the matrix.
+   * @param row the element's row position.
+   * @param column
+   * @param value
+   */
   public void setElement(int row, int column, int value) {
     if (row <= this.matrix.length - 1 && column <= this.matrix[0].length - 1) {
       this.matrix[row][column] = value;

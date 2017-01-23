@@ -1,8 +1,11 @@
 import org.junit.*;
 import static org.junit.Assert.*;
 
+/**
+ * simlple test.
+ */
 public class HashUtilitiesTest {
-  
+
   @Test
   public void testsZero() {
     HashUtilities hash = new HashUtilities();
@@ -11,7 +14,7 @@ public class HashUtilitiesTest {
     int expected = 0;
     assertEquals(output, expected);
   }
-  
+
   @Test
   public void testsMax() {
     HashUtilities hash = new HashUtilities();
@@ -20,7 +23,7 @@ public class HashUtilitiesTest {
     int expected = 647;
     assertEquals(output, expected);
   }
-  
+
   @Test
   public void testsRandom() {
     HashUtilities hash = new HashUtilities();
@@ -29,5 +32,5 @@ public class HashUtilitiesTest {
     int expected = 647;
     assertEquals(output, expected);
   }
-  
+
 }

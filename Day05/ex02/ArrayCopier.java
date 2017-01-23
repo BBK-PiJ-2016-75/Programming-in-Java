@@ -1,12 +1,16 @@
 package ex02;
 
+/**
+ * Copies the contents of one array to another. If the source array is
+ * shorter or equal than the destination array, then all of its contents
+ * are copied. If it is longer, then as many items as can fill the destination
+ * array are copied.
+ */
 public class ArrayCopier {
 
   /**
-   * Copies the contents of one array to another. If the source array is
-   * shorter or equal than the destination array, then all of its contents
-   * are copied. If it is longer, then as many items as can fill the destination
-   * array are copied.
+   * Compares the lengths of the source and destination arrays and copies the
+   * content from the source accordingly.
    * @param src the source array.
    * @param dst the destination array.
    */
