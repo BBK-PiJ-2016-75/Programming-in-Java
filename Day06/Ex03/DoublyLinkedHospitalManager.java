@@ -7,22 +7,22 @@ public class DoublyLinkedHospitalManager {
   private DoublyLinkedPatient firstPatient = null;
   private DoublyLinkedPatient lastPatient = null;
   private int listCount = 0;
-  
+
   public DoublyLinkedPatient getFirstPatient() {
     return this.firstPatient;
   }
-  
+
   public DoublyLinkedPatient getLastPatient() {
     return this.lastPatient;
   }
-  
+
   public int getListCount() {
     return this.listCount;
   }
-  
+
   /**
-   * sdf
-   * @param newPatient
+   * Adds a new doubly-linked patient to the hospital's list.
+   * @param newPatient the doubly-linked patient to add to the hospital's list.
    */
   public void addPatient(DoublyLinkedPatient newPatient) {
     listCount++;
@@ -42,13 +42,12 @@ public class DoublyLinkedHospitalManager {
     lastPatient = newPatient;
   }
 
-  // this is a member method of class HospitalManager
-  // returns true if the patient was found and removed, false otherwise
-  
   /**
-   * sdfas
-   * @param name
-   * @return
+   * Removes a doubly-linked patient from the hospital's list by name.
+   * @param name the name of the doubly-linked patient to remove from the
+   *     hospital's list.
+   * @return true if the doubly-linked patient is found and removed, false
+   *     otherwise.
    */
   public boolean deletePatient(String name) {
     if (firstPatient == null) {
@@ -85,9 +84,10 @@ public class DoublyLinkedHospitalManager {
     }
     return false;
   }
-  
+
   /**
-   * sdfsd
+   * Prints to the console the names of the doubly-linked patients on the
+   * hospital's list, from the first patient to the last.
    */
   public void printListForwards() {
     if (firstPatient == null) {
@@ -100,9 +100,10 @@ public class DoublyLinkedHospitalManager {
     }
     System.out.println(current.getName());
   }
-  
+
   /**
-   * asdas
+   * Prints to the console the names of the doubly-linked patients on the
+   * hospital's list, from the last patient to the first.
    */
   public void printListBackwards() {
     if (firstPatient == null) {

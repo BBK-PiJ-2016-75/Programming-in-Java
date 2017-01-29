@@ -1,17 +1,30 @@
 package ex07;
 
+/**
+ * A utility class to convert an integer array to a integer list, and print
+ * the nodes of an integer list to the console.
+ */
 public class ArrayUtilities {
-  
-  public static integerNode arrayToList(int[] array) {
-    integerNode integerNodeList = new integerNode(array[0]);
+
+  /**
+   * Converts an integer array into an integer list.
+   * @param array the integer array to convert.
+   * @return the converted integer list.
+   */
+  public static IntegerNode arrayToList(int[] array) {
+    IntegerNode integerNodeList = new IntegerNode(array[0]);
     for (int i = 1; i < array.length; i++) {
-      integerNode nodeToAdd = new integerNode(array[i]);
+      IntegerNode nodeToAdd = new IntegerNode(array[i]);
       integerNodeList.addIntegerNode(nodeToAdd);
     }
     return integerNodeList;
   }
-  
-  public static void printIntegerList(integerNode list) {
+
+  /**
+   * Prints the value of each node in an integer list to the console.
+   * @param list the integer list to be printed.
+   */
+  public static void printIntegerList(IntegerNode list) {
     if (list.getNextNode() == null) {
       System.out.println(list.getValue());
     } else {

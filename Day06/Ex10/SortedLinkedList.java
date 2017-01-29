@@ -1,17 +1,24 @@
 package ex10;
 
+/**
+ * A list of integer nodes, which is constructed so that all nodes are sorted
+ * according to their values.
+ */
 public class SortedLinkedList {
-  
   private SortedListNode firstNode = null;
-  
+
   public void setFirst(SortedListNode firstNode) {
     this.firstNode = firstNode;
   }
-  
+
   public SortedListNode getFirst() {
     return firstNode;
   }
-  
+
+  /**
+   * Adds a node to the sorted list in order of its value.
+   * @param nodeToAdd the node to be added to the list.
+   */
   public void addNode(SortedListNode nodeToAdd) {
     if (firstNode == null) {
       firstNode = nodeToAdd;
@@ -32,13 +39,16 @@ public class SortedLinkedList {
             currentNode = currentNode.getNextNode();
           }
         }
-        if (!finished){
+        if (!finished) {
           currentNode.setNextNode(nodeToAdd);
         }
       }
     }
   }
-  
+
+  /**
+   * Prints the value of each node in the sorted list to the console.
+   */
   public void printList() {
     if (firstNode == null) {
       System.out.println("List empty. Nothing to print.");

@@ -1,20 +1,25 @@
 package ex04;
 
+/**
+ * Creates and manages a circular list of patients for a hospital.
+ */
 public class CircularHospitalManager {
-	
   private CircularPatient firstPatient = null;
   private int listCount = 0;
-  
+
   public CircularPatient getFirstPatient() {
     return this.firstPatient;
   }
-  
+
   public int getListCount() {
     return this.listCount;
   }
-	
-  // this is a member method of class HospitalManager
-	public void addPatient(CircularPatient newPatient) {
+
+  /**
+   * Adds a new patient to the hospital's circular list.
+   * @param newPatient the patient to add to the circular list.
+   */
+  public void addPatient(CircularPatient newPatient) {
     listCount++;
     if (firstPatient == null) {
       firstPatient = newPatient;
@@ -31,15 +36,18 @@ public class CircularHospitalManager {
     newPatient.setNextPatient(firstPatient);
   }
 
-  // this is a member method of class HospitalManager
-	// returns true if the patient was found and removed, false otherwise
+  /**
+   * Removes a patient from the hospital's circular list by name.
+   * @param name the name of the patient to be removed from the circular list.
+   * @return true if the patient is found and removed, false otherwise.
+   */
   public boolean deletePatient(String name) {
     if (firstPatient == null) {
       // list is empty, nothing to remove
       return false;
     }
     CircularPatient current = firstPatient;
-    while (!current.getNextPatient().getName().equals(name) 
+    while (!current.getNextPatient().getName().equals(name)
         && current.getNextPatient() != firstPatient) {
       current = current.getNextPatient();
     }
@@ -53,7 +61,11 @@ public class CircularHospitalManager {
     }
     return false;
   }
-  
+
+  /**
+   * Prints to the console the names of all the patients on the hospital's
+   * circular list.
+   */
   public void printPatientList() {
     if (firstPatient == null) {
       return;
