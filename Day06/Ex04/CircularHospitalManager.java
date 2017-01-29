@@ -1,3 +1,5 @@
+package ex04;
+
 public class CircularHospitalManager {
 	
   private CircularPatient firstPatient = null;

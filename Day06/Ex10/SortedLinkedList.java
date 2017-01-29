@@ -1,3 +1,5 @@
+package ex10;
+
 public class SortedLinkedList {
   
   private SortedListNode firstNode = null;

@@ -1,18 +1,25 @@
+package ex01;
+
+/**
+ * Creates and manages a list of patients for a hospital.
+ */
 public class HospitalManager {
-	
   private Patient firstPatient = null;
   private int listCount = 0;
-  
+
   public Patient getFirstPatient() {
     return this.firstPatient;
   }
-  
+
   public int getListCount() {
     return this.listCount;
   }
-	
-  // this is a member method of class HospitalManager
-	public void addPatient(Patient newPatient) {
+
+  /**
+   * Adds a new patient to the hospital's list.
+   * @param newPatient the patient to add to the hospital's list.
+   */
+  public void addPatient(Patient newPatient) {
     listCount++;
     if (firstPatient == null) {
       firstPatient = newPatient;
@@ -27,8 +34,11 @@ public class HospitalManager {
     current.setNextPatient(newPatient);
   }
 
-  // this is a member method of class HospitalManager
-	// returns true if the patient was found and removed, false otherwise
+  /**
+   * Removes a patient from the hospital's list by name.
+   * @param name the name of the patient to remove from the hospital's list.
+   * @return true if the patient is found and removed, false otherwise.
+   */
   public boolean deletePatient(String name) {
     if (firstPatient == null) {
       // list is empty, nothing to remove
@@ -53,7 +63,10 @@ public class HospitalManager {
     }
     return false;
   }
-  
+
+  /**
+   * Prints to the console the names of the patients on the hospital's list.
+   */
   public void printPatientList() {
     if (firstPatient == null) {
       return;

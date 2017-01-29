@@ -1,3 +1,5 @@
+package ex04;
+
 public class CircularHospitalManagerTester {
   
   public static void main(String[] args) {

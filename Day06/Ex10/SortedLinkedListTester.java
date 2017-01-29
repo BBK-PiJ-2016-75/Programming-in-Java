@@ -1,3 +1,5 @@
+package ex10;
+
 public class SortedLinkedListTester {
   
   public static void main(String[] args) {

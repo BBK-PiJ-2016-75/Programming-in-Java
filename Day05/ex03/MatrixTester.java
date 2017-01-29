@@ -1,12 +1,15 @@
 package ex03;
 
+/**
+ * Simple program to test the methods of the Matrix class.
+ */
 public class MatrixTester {
-  
+
   public static void main(String[] args) {
     MatrixTester tester = new MatrixTester();
     tester.run();
   }
-  
+
   private void run() {
     Matrix myMatrix = new Matrix(3, 3);
     myMatrix.prettyPrint();

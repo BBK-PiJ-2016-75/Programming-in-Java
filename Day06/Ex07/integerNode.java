@@ -1,9 +1,11 @@
-public class integerNode {
+package ex07;
+
+public class IntegerNode {
   
   private int value = 0;
   private integerNode nextNode = null;
   
-  public integerNode(int value) {
+  public IntegerNode(int value) {
     this.value = value;
   }
   

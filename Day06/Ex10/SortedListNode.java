@@ -1,3 +1,5 @@
+package ex10;
+
 public class SortedListNode {
   
   private int value = 0;

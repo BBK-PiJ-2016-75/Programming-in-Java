@@ -1,3 +1,5 @@
+package ex08;
+
 public class Spy {
   
   private static int spyCount = 0;

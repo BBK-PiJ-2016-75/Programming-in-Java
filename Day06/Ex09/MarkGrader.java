@@ -1,3 +1,5 @@
+package ex09;
+
 public class MarkGrader {
   
   private static final int MAXIMUM_MARK = 100;

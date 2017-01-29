@@ -1,3 +1,5 @@
+package ex04;
+
 public class CircularPatient {
   
   private String name = null;

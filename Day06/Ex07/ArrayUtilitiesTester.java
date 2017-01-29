@@ -1,3 +1,5 @@
+package ex07;
+
 public class ArrayUtilitiesTester {
   
   public static void main(String[] args) {

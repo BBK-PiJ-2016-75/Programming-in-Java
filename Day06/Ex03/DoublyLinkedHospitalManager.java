@@ -1,5 +1,10 @@
+package ex03;
+
+/**
+ * Creates and manages a list of doubly-linked patients for a hospital.
+ */
 public class DoublyLinkedHospitalManager {
-	private DoublyLinkedPatient firstPatient = null;
+  private DoublyLinkedPatient firstPatient = null;
   private DoublyLinkedPatient lastPatient = null;
   private int listCount = 0;
   
@@ -14,9 +19,12 @@ public class DoublyLinkedHospitalManager {
   public int getListCount() {
     return this.listCount;
   }
-	
-  // this is a member method of class HospitalManager
-	public void addPatient(DoublyLinkedPatient newPatient) {
+  
+  /**
+   * sdf
+   * @param newPatient
+   */
+  public void addPatient(DoublyLinkedPatient newPatient) {
     listCount++;
     if (firstPatient == null) {
       firstPatient = newPatient;
@@ -35,7 +43,13 @@ public class DoublyLinkedHospitalManager {
   }
 
   // this is a member method of class HospitalManager
-	// returns true if the patient was found and removed, false otherwise
+  // returns true if the patient was found and removed, false otherwise
+  
+  /**
+   * sdfas
+   * @param name
+   * @return
+   */
   public boolean deletePatient(String name) {
     if (firstPatient == null) {
       // list is empty, nothing to remove
@@ -72,6 +86,9 @@ public class DoublyLinkedHospitalManager {
     return false;
   }
   
+  /**
+   * sdfsd
+   */
   public void printListForwards() {
     if (firstPatient == null) {
       return;
@@ -84,6 +101,9 @@ public class DoublyLinkedHospitalManager {
     System.out.println(current.getName());
   }
   
+  /**
+   * asdas
+   */
   public void printListBackwards() {
     if (firstPatient == null) {
       return;

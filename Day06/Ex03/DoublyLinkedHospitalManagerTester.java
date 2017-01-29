@@ -1,3 +1,5 @@
+package ex03;
+
 public class DoublyLinkedHospitalManagerTester {
   
   public static void main(String[] args) {

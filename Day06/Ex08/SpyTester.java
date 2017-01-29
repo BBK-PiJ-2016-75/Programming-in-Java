@@ -1,3 +1,5 @@
+package ex08;
+
 public class SpyTester {
   
   public static void main(String[] args) {
