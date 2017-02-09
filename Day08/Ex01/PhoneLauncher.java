@@ -1,16 +1,18 @@
+package ex01;
+
 public class PhoneLauncher {
   public static void main(String[] args) {
     PhoneLauncher launcher = new PhoneLauncher();
     launcher.launch();
   }
-  
-  public void launch () {
-    
+
+  public void launch() {
+
     // Test old phone.
     OldPhone rotary = new OldPhone();
     String number = "777-5311";
     rotary.call(number);
-    
+
     // Test mobile phone.
     MobilePhone nokia = new MobilePhone();
     String alarm = "Wake up";
@@ -23,7 +25,7 @@ public class PhoneLauncher {
     }
     nokia.call(number);
     nokia.printLastNumbers();
-    
+
     // Test smart phone.
     SmartPhone android = new SmartPhone();
     String web = "google";
