@@ -8,10 +8,15 @@ public class MobilePhone extends OldPhone {
   private String[] history = new String[10];
   private int callCount = 0;
 
+  public MobilePhone(String brand) {
+    super(brand);
+  }
+
   public void ringAlarm(String alarm) {
     System.out.println(alarm + ": BEEP BEEP BEEP BEEP!");
   }
 
+  //cannot make private, as that makes access from other classes impossible
   public void playGame(String game) {
     System.out.println("So, you'd like to play a little game of " + game + "?");
   }
