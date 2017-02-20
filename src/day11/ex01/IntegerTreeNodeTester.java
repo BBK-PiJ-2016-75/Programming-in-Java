@@ -1,3 +1,5 @@
+package com.github.bbkpij201675.programminginjava.day11.ex01;
+
 public class IntegerTreeNodeTester {
   
   public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package com.github.bbkpij201675.programminginjava.day12.ex03;
+
 import org.junit.*;
 import static org.junit.Assert.*;
 

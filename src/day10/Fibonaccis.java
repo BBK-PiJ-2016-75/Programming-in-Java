@@ -1,3 +1,5 @@
+package com.github.bbkpij201675.programminginjava.day10;
+
 public class Fibonaccis {
   
   public static int fibRecursive(int n) {

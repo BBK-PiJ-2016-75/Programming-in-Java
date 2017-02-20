@@ -1,3 +1,5 @@
+package com.github.bbkpij201675.programminginjava.day15;
+
 import java.time.Duration;
 import java.time.Instant;
 

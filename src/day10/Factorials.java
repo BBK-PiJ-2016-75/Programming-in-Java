@@ -1,3 +1,5 @@
+package com.github.bbkpij201675.programminginjava.day10;
+
 public class Factorials {
   
   public static int factorialRecursive(int n) {
