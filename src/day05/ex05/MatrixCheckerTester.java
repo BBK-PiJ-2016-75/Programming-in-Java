@@ -23,14 +23,14 @@ public class MatrixCheckerTester {
 
     //Check if 2D arrays are symmetrical.
     int[][] symmetrical2D = {
-      {1, 2, 3},
-      {2, 4, 5},
-      {3, 5, 6},
+        {1, 2, 3},
+        {2, 4, 5},
+        {3, 5, 6},
     };
     int[][] nonSymmetrical2D = {
-      {1, 2, 3},
-      {4, 5, 6},
-      {7, 8, 9},
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
     };
     System.out.println("The 1st 2D array is symmetrical: "
         + myChecker.isSymmetrical(symmetrical2D));
@@ -39,14 +39,14 @@ public class MatrixCheckerTester {
 
     //Check if 2D arrays are triangular.
     int[][] triangular2D = {
-      {1, 2, 3},
-      {0, 4, 5},
-      {0, 0, 6},
+        {1, 2, 3},
+        {0, 4, 5},
+        {0, 0, 6},
     };
     int[][] nonTriangular2D = {
-      {1, 2, 3},
-      {4, 5, 6},
-      {7, 8, 9},
+        {1, 2, 3},
+        {4, 5, 6},
+        {7, 8, 9},
     };
     System.out.println("The 1st 2D array is triangular: "
         + myChecker.isTriangular(triangular2D));

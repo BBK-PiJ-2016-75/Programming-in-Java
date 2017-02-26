@@ -8,9 +8,10 @@ public class Comparator {
 
   /**
    * Returns whichever given Comparable object has the highest value.
+   *
    * @param comparableOne The first Comparable object.
    * @param comparableTwo The second Comparable object.
-   * @param <T> Ensures that the objects are Comparable.
+   * @param <T>           Ensures that the objects are Comparable.
    * @return The Comparable object with the highest value.
    */
   public <T extends Comparable<T>> T getMax(T comparableOne, T comparableTwo) {

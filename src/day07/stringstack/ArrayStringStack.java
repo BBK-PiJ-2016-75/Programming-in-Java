@@ -5,21 +5,19 @@ package com.github.bbkpij201675.programminginjava.day07.stringstack;
  */
 public class ArrayStringStack implements StringStack {
   /**
-   * The array that contains the string. When full, a new one
-   * is created.
-   */
-  private String[] stringArray;
-
-  /**
-   * The number of strings in this stack.
-   */
-  private int size;
-
-  /**
    * The initial size of the array.
    * (Note: not size of stack, which starts at 0)
    */
   private static int INITIAL_ARRAY_SIZE = 5;
+  /**
+   * The array that contains the string. When full, a new one
+   * is created.
+   */
+  private String[] stringArray;
+  /**
+   * The number of strings in this stack.
+   */
+  private int size;
 
   public ArrayStringStack() {
     stringArray = new String[INITIAL_ARRAY_SIZE];

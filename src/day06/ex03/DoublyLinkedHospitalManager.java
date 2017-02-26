@@ -22,6 +22,7 @@ public class DoublyLinkedHospitalManager {
 
   /**
    * Adds a new doubly-linked patient to the hospital's list.
+   *
    * @param newPatient the doubly-linked patient to add to the hospital's list.
    */
   public void addPatient(DoublyLinkedPatient newPatient) {
@@ -44,10 +45,11 @@ public class DoublyLinkedHospitalManager {
 
   /**
    * Removes a doubly-linked patient from the hospital's list by name.
+   *
    * @param name the name of the doubly-linked patient to remove from the
-   *     hospital's list.
+   *             hospital's list.
    * @return true if the doubly-linked patient is found and removed, false
-   *     otherwise.
+   * otherwise.
    */
   public boolean deletePatient(String name) {
     if (firstPatient == null) {

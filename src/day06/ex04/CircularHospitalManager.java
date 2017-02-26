@@ -17,6 +17,7 @@ public class CircularHospitalManager {
 
   /**
    * Adds a new patient to the hospital's circular list.
+   *
    * @param newPatient the patient to add to the circular list.
    */
   public void addPatient(CircularPatient newPatient) {
@@ -38,6 +39,7 @@ public class CircularHospitalManager {
 
   /**
    * Removes a patient from the hospital's circular list by name.
+   *
    * @param name the name of the patient to be removed from the circular list.
    * @return true if the patient is found and removed, false otherwise.
    */

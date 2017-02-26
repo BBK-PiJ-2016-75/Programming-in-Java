@@ -6,16 +6,17 @@ package com.github.bbkpij201675.programminginjava.day04.ex06;
 public class Integer2 {
   private int value = 0;
 
-  public void setValue(int number) {
-    this.value = number;
-  }
-
   public int getValue() {
     return value;
   }
 
+  public void setValue(int number) {
+    this.value = number;
+  }
+
   /**
    * Returns if an integer is even, by checking if its remainder by 2 is 0.
+   *
    * @return true if the integer is even.
    */
   public boolean isEven() {
@@ -28,6 +29,7 @@ public class Integer2 {
 
   /**
    * Returns if an integer is odd, by checking if its remainder by 2 is 1.
+   *
    * @return true if the integer is odd.
    */
   public boolean isOdd() {

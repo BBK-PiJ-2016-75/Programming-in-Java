@@ -1,7 +1,7 @@
 package com.github.bbkpij201675.programminginjava.day12.ex03;
 
 public class Person {
-  
+
   public String getInitials(String fullName) {
     String result = "";
     String[] words = fullName.split(" ");

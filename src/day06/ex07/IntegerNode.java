@@ -14,6 +14,7 @@ public class IntegerNode {
 
   /**
    * Adds a new integer node to the end of the list.
+   *
    * @param newNode the node to be added to the list.
    */
   public void addIntegerNode(IntegerNode newNode) {

@@ -11,6 +11,7 @@ public class Two {
 
   /**
    * sadsad
+   *
    * @param n
    * @return
    */
@@ -23,8 +24,26 @@ public class Two {
     }
   }
 
+  public static void main(String[] args) {
+    Two test = new Two();
+
+    Instant start = Instant.now();
+    System.out.println(test.fib(50));
+    Instant end = Instant.now();
+    Duration runtime = Duration.between(start, end);
+    System.out.println(runtime.getSeconds() + "s " + (runtime.getNano()
+        / 1000000) + "ns");
+    Instant start2 = Instant.now();
+    System.out.println(test.fibM(50));
+    Instant end2 = Instant.now();
+    runtime = Duration.between(start2, end2);
+    System.out.println(runtime.getSeconds() + "s " + (runtime.getNano()
+        / 1000000) + "ns");
+  }
+
   /**
    * ADd
+   *
    * @param n
    * @return
    */
@@ -48,22 +67,5 @@ public class Two {
     }
     precalculated[0] = 1; // F(1)
     precalculated[1] = 1; // F(2)
-  }
-
-  public static void main(String[] args) {
-    Two test = new Two();
-
-    Instant start = Instant.now();
-    System.out.println(test.fib(50));
-    Instant end = Instant.now();
-    Duration runtime = Duration.between(start, end);
-    System.out.println(runtime.getSeconds() + "s " + (runtime.getNano()
-        / 1000000) + "ns");
-    Instant start2 = Instant.now();
-    System.out.println(test.fibM(50));
-    Instant end2 = Instant.now();
-    runtime = Duration.between(start2, end2);
-    System.out.println(runtime.getSeconds() + "s " + (runtime.getNano()
-        / 1000000) + "ns");
   }
 }

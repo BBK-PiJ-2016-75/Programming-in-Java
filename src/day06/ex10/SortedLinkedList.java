@@ -7,16 +7,17 @@ package com.github.bbkpij201675.programminginjava.day06.ex10;
 public class SortedLinkedList {
   private SortedListNode firstNode = null;
 
-  public void setFirst(SortedListNode firstNode) {
-    this.firstNode = firstNode;
-  }
-
   public SortedListNode getFirst() {
     return firstNode;
   }
 
+  public void setFirst(SortedListNode firstNode) {
+    this.firstNode = firstNode;
+  }
+
   /**
    * Adds a node to the sorted list in order of its value.
+   *
    * @param nodeToAdd the node to be added to the list.
    */
   public void addNode(SortedListNode nodeToAdd) {

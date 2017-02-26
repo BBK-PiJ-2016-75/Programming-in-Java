@@ -49,6 +49,7 @@ public class Mortgage {
 
   /**
    * Calculates how many years will be needed to pay off only the loan interest.
+   *
    * @return the number of years needed to pay the interest off.
    */
   public double yearsOfInterest() {

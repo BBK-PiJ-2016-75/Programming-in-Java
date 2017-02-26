@@ -12,15 +12,15 @@ public class SortedListNode {
     this.value = value;
   }
 
-  public void setNextNode(SortedListNode nextNode) {
-    this.nextNode = nextNode;
-  }
-
   public int getValue() {
     return value;
   }
 
   public SortedListNode getNextNode() {
     return nextNode;
+  }
+
+  public void setNextNode(SortedListNode nextNode) {
+    this.nextNode = nextNode;
   }
 }

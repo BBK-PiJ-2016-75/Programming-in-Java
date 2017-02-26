@@ -7,6 +7,7 @@ public class Calculator {
 
   /**
    * Performs an addition operation and prints the sum.
+   *
    * @param x the first summand.
    * @param y the second summand.
    */
@@ -17,6 +18,7 @@ public class Calculator {
 
   /**
    * Performs a subtraction operation and prints the difference.
+   *
    * @param x the minuend.
    * @param y the subtrahend.
    */
@@ -27,6 +29,7 @@ public class Calculator {
 
   /**
    * Performs a multiplication operation and prints the product.
+   *
    * @param x the first factor.
    * @param y the second factor.
    */
@@ -37,6 +40,7 @@ public class Calculator {
 
   /**
    * Performs a division operation and prints the quotient.
+   *
    * @param x the numerator.
    * @param y the denominator.
    */
@@ -47,6 +51,7 @@ public class Calculator {
 
   /**
    * Performs a modulo operation and prints the remainder.
+   *
    * @param x the dividend.
    * @param y the divisor.
    */

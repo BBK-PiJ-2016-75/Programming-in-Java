@@ -29,7 +29,7 @@ for (int i = 0; i < tens; i++) {
   changePounds -= 10;
 }
 int fives = changePounds / 5;
-for (int i = 0; i < fives; i++){
+for (int i = 0; i < fives; i++) {
   changePounds -= 5;
 }
 int twos = changePounds / 2;

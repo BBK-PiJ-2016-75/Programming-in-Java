@@ -11,8 +11,9 @@ public class Patient {
 
   /**
    * Constructs a patient object from a provided name, age, and illness.
-   * @param name the patient's name.
-   * @param age the patient's age.
+   *
+   * @param name    the patient's name.
+   * @param age     the patient's age.
    * @param illness the patient's illness.
    */
   public Patient(String name, int age, String illness) {
@@ -21,29 +22,14 @@ public class Patient {
     this.illness = illness;
   }
 
-  //Sets the patient's name.
-  public void setName(String name) {
-    this.name = name;
-  }
-
-  //Sets the patient's age.
-  public void setAge(int age) {
-    this.age = age;
-  }
-
-  //Sets the patient's illness.
-  public void setIllness(String illness) {
-    this.illness = illness;
-  }
-
-  //Sets the next patient.
-  public void setNextPatient(Patient nextPatient) {
-    this.nextPatient = nextPatient;
-  }
-
   //Returns the patient's name.
   public String getName() {
     return this.name;
+  }
+
+  //Sets the patient's name.
+  public void setName(String name) {
+    this.name = name;
   }
 
   //Returns the patient's age.
@@ -51,13 +37,28 @@ public class Patient {
     return this.age;
   }
 
+  //Sets the patient's age.
+  public void setAge(int age) {
+    this.age = age;
+  }
+
   //Returns the patient's illness.
   public String getIllness() {
-    return  this.illness;
+    return this.illness;
+  }
+
+  //Sets the patient's illness.
+  public void setIllness(String illness) {
+    this.illness = illness;
   }
 
   //Returns the next patient in the list.
   public Patient getNextPatient() {
     return this.nextPatient;
+  }
+
+  //Sets the next patient.
+  public void setNextPatient(Patient nextPatient) {
+    this.nextPatient = nextPatient;
   }
 }

@@ -9,6 +9,7 @@ public class GenericDoublyLinkedList<T extends GenericDoublyLinkedNode> {
 
   /**
    * asa.
+   *
    * @param element asa
    */
   public void addElement(T element) {

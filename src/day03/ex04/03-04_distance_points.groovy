@@ -29,11 +29,11 @@ thirdPoint.y = Double.parseDouble(System.console().readLine());
 
 //Calculate the distances.
 double dist1_2 = Math.sqrt((Math.pow(firstPoint.x - secondPoint.x, 2))
-    +(Math.pow(firstPoint.y - secondPoint.y, 2)));
+    + (Math.pow(firstPoint.y - secondPoint.y, 2)));
 double dist1_3 = Math.sqrt((Math.pow(firstPoint.x - thirdPoint.x, 2))
-    +(Math.pow(firstPoint.y - thirdPoint.y, 2)));
+    + (Math.pow(firstPoint.y - thirdPoint.y, 2)));
 double dist2_3 = Math.sqrt((Math.pow(secondPoint.x - thirdPoint.x, 2))
-    +(Math.pow(secondPoint.y - thirdPoint.y, 2)));
+    + (Math.pow(secondPoint.y - thirdPoint.y, 2)));
 
 //Compare the distances.
 if ((dist1_2 < dist1_3) && (dist1_2 < dist2_3)) {

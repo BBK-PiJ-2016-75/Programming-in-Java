@@ -1,7 +1,7 @@
 package com.github.bbkpij201675.programminginjava.day10;
 
 public class NumbersRecursion {
-  
+
   public static void printNumbers(int n) {
     if (n <= 0) {
       return;
@@ -11,7 +11,7 @@ public class NumbersRecursion {
     printNumbers(n - 3);
     System.out.println(n);
   }
-  
+
   public static void main(String[] args) {
     printNumbers(6);
   }

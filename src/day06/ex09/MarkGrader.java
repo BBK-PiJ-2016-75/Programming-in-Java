@@ -16,6 +16,11 @@ public class MarkGrader {
   private static int failures = 0;
   private static int invalid = 0;
 
+  public static void main(String[] args) {
+    MarkGrader myGrader = new MarkGrader();
+    myGrader.run();
+  }
+
   private void inputMark() {
     int mark = 0;
     System.out.println("Please enter marks, one by one. Enter -1 to quit.");
@@ -35,11 +40,6 @@ public class MarkGrader {
     System.out.print("There are " + (distinctions + passes + failures)
         + " students: " + distinctions + " distinctions, " + passes + " passes, "
         + failures + " fails (plus " + invalid + " invalid entries).");
-  }
-
-  public static void main(String[] args) {
-    MarkGrader myGrader = new MarkGrader();
-    myGrader.run();
   }
 
   private void run() {

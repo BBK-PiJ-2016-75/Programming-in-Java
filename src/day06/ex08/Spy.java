@@ -11,6 +11,7 @@ public class Spy {
   /**
    * Constructs a spy object with a given id number.
    * Also, increments the spy counter by one.
+   *
    * @param id the new spy object's id number.
    */
   public Spy(int id) {

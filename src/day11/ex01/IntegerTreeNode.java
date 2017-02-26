@@ -1,17 +1,17 @@
 package com.github.bbkpij201675.programminginjava.day11.ex01;
 
 public class IntegerTreeNode {
-  
+
   private int value;
   private IntegerTreeNode left;
   private IntegerTreeNode right;
-  
+
   public IntegerTreeNode(int value) {
     this.value = value;
     this.left = null;
     this.right = null;
   }
-  
+
   public void add(int newNumber) {
     if (newNumber > this.value) {
       if (right == null) {
@@ -27,7 +27,7 @@ public class IntegerTreeNode {
       }
     }
   }
-  
+
   public boolean contains(int n) {
     if (n == this.value) {
       return true;
@@ -45,7 +45,7 @@ public class IntegerTreeNode {
       }
     }
   }
-  
+
   public int getMax() {
     if (right == null) {
       return value;
@@ -53,7 +53,7 @@ public class IntegerTreeNode {
       return right.getMax();
     }
   }
-  
+
   public int getMin() {
     if (left == null) {
       return value;
@@ -61,7 +61,7 @@ public class IntegerTreeNode {
       return left.getMin();
     }
   }
-  
+
   public String toString() {
     String treeString = "[" + value;
     if (left == null) {

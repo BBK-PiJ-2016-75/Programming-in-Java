@@ -8,6 +8,7 @@ public class StringPrinter { // extends String {
 
   /**
    * Prints to the console the even-numbered characters in a given string.
+   *
    * @param toPrint the string to print from.
    */
   public static void printEven(String toPrint) {

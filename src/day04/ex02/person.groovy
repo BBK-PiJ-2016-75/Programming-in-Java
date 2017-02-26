@@ -6,6 +6,7 @@ class Person {
   Person father;
   Person mother;
 }
+
 Person john = new Person();
 john.name = "John Smith";
 john.age = 35;

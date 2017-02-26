@@ -12,27 +12,27 @@ public class GenericDoublyLinkedNode<T> {
     this.data = data;
   }
 
-  public void setPreviousNode(GenericDoublyLinkedNode previousNode) {
-    this.previousNode = previousNode;
-  }
-
   public GenericDoublyLinkedNode getPreviousNode() {
     return previousNode;
   }
 
-  public void setData(T data) {
-    this.data = data;
+  public void setPreviousNode(GenericDoublyLinkedNode previousNode) {
+    this.previousNode = previousNode;
   }
 
   public T getData() {
     return data;
   }
 
-  public void setNextNode(GenericDoublyLinkedNode nextNode) {
-    this.nextNode = nextNode;
+  public void setData(T data) {
+    this.data = data;
   }
 
   public GenericDoublyLinkedNode getNextNode() {
     return nextNode;
+  }
+
+  public void setNextNode(GenericDoublyLinkedNode nextNode) {
+    this.nextNode = nextNode;
   }
 }

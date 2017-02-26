@@ -8,7 +8,8 @@ public class Matrix {
 
   /**
    * Constructs a new 2-D array.
-   * @param rows the number of rows in the matrix array.
+   *
+   * @param rows    the number of rows in the matrix array.
    * @param columns the number of columns in the matrix array.
    */
   public Matrix(int rows, int columns) {
@@ -22,9 +23,10 @@ public class Matrix {
 
   /**
    * Sets a specific element within the matrix array.
-   * @param row the element's row position.
+   *
+   * @param row    the element's row position.
    * @param column the element's column position.
-   * @param value the element's desired value.
+   * @param value  the element's desired value.
    */
   public void setElement(int row, int column, int value) {
     if (row <= this.matrix.length - 1 && column <= this.matrix[0].length - 1) {
@@ -34,7 +36,8 @@ public class Matrix {
 
   /**
    * Sets the values of an entire row in the matrix array.
-   * @param row the target row number.
+   *
+   * @param row    the target row number.
    * @param values the desired values of the elements in the target row.
    */
   public void setRow(int row, String values) {
@@ -50,6 +53,7 @@ public class Matrix {
 
   /**
    * Sets the values of an entire column in the matrix array.
+   *
    * @param column the target column number.
    * @param values the desired values of the elements in the target column.
    */
@@ -66,6 +70,7 @@ public class Matrix {
 
   /**
    * Creates a string comprised of the all the values held by the matrix array.
+   *
    * @return the string of the array's values.
    */
   public String toString() {

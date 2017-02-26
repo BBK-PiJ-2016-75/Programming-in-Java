@@ -11,6 +11,7 @@ public class ArrayCopier {
   /**
    * Compares the lengths of the source and destination arrays and copies the
    * content from the source accordingly.
+   *
    * @param src the source array.
    * @param dst the destination array.
    */

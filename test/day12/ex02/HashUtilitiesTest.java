@@ -5,7 +5,7 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * simlple test.
+ * A simple test.
  */
 public class HashUtilitiesTest {
 

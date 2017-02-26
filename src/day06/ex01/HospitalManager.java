@@ -17,6 +17,7 @@ public class HospitalManager {
 
   /**
    * Adds a new patient to the hospital's list.
+   *
    * @param newPatient the patient to add to the hospital's list.
    */
   public void addPatient(Patient newPatient) {
@@ -36,6 +37,7 @@ public class HospitalManager {
 
   /**
    * Removes a patient from the hospital's list by name.
+   *
    * @param name the name of the patient to remove from the hospital's list.
    * @return true if the patient is found and removed, false otherwise.
    */

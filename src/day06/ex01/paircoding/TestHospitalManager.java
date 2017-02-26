@@ -48,7 +48,7 @@ public class TestHospitalManager {
             System.out.println("Please Enter illness:");
             String illness = System.console().readLine();
             HospitalManager hm = new HospitalManager();
-            Patient firstPatient =  hm.getFirstPatient();
+            Patient firstPatient = hm.getFirstPatient();
             hm.addPatient(firstPatient);
             System.out.println("\n");
             System.out.println("Name: " + firstPatient.getName() + " Age: "

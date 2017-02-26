@@ -9,6 +9,7 @@ public class Point {
 
   /**
    * Calculates the distance from the current point to a target point.
+   *
    * @param target the target point.
    * @return the distance to the target point.
    */
@@ -19,6 +20,7 @@ public class Point {
 
   /**
    * Calculates the distance from the current point to the origin point (0, 0).
+   *
    * @return the distance to the origin point.
    */
   public double distanceToOrigin() {
@@ -28,6 +30,7 @@ public class Point {
 
   /**
    * Sets the current point to new given co-ordinates.
+   *
    * @param xAxis the new x co-ordinate.
    * @param yAxis the new y co-ordinate.
    */
@@ -38,6 +41,7 @@ public class Point {
 
   /**
    * Sets the current point to a new given point.
+   *
    * @param target the new point.
    */
   public void moveTo(Point target) {
@@ -47,6 +51,7 @@ public class Point {
 
   /**
    * Creates a cloned copy of a point.
+   *
    * @return the cloned copy.
    */
   public Point clone() {
@@ -58,6 +63,7 @@ public class Point {
 
   /**
    * Creates an inverse copy of a point.
+   *
    * @return the inverse copy.
    */
   public Point opposite() {

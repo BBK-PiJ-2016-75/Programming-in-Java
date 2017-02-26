@@ -8,6 +8,7 @@ public class MatrixChecker {
 
   /**
    * Checks whether or not an array is symmetrically organised.
+   *
    * @param array the array to be checked.
    * @return true if the array is symmetrical.
    */
@@ -23,6 +24,7 @@ public class MatrixChecker {
 
   /**
    * Checks whether or not a matrix array is symmetrically organised.
+   *
    * @param array the matrix array to be checked.
    * @return true if the matrix array is symmetrical.
    */
@@ -43,6 +45,7 @@ public class MatrixChecker {
 
   /**
    * Checks whether or not a matrix array is triangularly organised.
+   *
    * @param array the matrix array to be checked.
    * @return true if the matrix array is triangular.
    */

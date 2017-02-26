@@ -1,7 +1,7 @@
 package com.github.bbkpij201675.programminginjava.day10;
 
 public class Fibonaccis {
-  
+
   public static int fibRecursive(int n) {
     if ((n == 1) || (n == 2)) {
       return 1;
@@ -10,7 +10,7 @@ public class Fibonaccis {
       return result;
     }
   }
-  
+
   public static int fibIterative(int n) {
     int x = 1;
     int y = 1;
@@ -21,7 +21,7 @@ public class Fibonaccis {
     }
     return x;
   }
-  
+
   public static void main(String[] args) {
     int recursive = fibRecursive(9);
     System.out.println(recursive);

@@ -22,14 +22,14 @@ public class StringStackNode {
   /**
    * Set the next node to point to the given node.
    */
-  public void setNext(StringStackNode node) {
-    next = node;
+  public StringStackNode getNext() {
+    return next;
   }
 
   /**
    * Set the next node to point to the given node.
    */
-  public StringStackNode getNext() {
-    return next;
+  public void setNext(StringStackNode node) {
+    next = node;
   }
 }

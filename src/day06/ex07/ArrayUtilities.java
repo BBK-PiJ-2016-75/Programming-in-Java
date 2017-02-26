@@ -8,6 +8,7 @@ public class ArrayUtilities {
 
   /**
    * Converts an integer array into an integer list.
+   *
    * @param array the integer array to convert.
    * @return the converted integer list.
    */
@@ -22,6 +23,7 @@ public class ArrayUtilities {
 
   /**
    * Prints the value of each node in an integer list to the console.
+   *
    * @param list the integer list to be printed.
    */
   public static void printIntegerList(IntegerNode list) {

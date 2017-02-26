@@ -10,6 +10,15 @@ public class ArrayCopierTester {
     tester.run();
   }
 
+  private static String printArray(int[] toPrint) {
+    String printout = "[";
+    for (int i = 0; i < toPrint.length - 1; i++) {
+      printout += toPrint[i] + ", ";
+    }
+    printout += toPrint[toPrint.length - 1] + "]";
+    return printout;
+  }
+
   private void run() {
     int[] source = {1, 2, 3, 4, 5};
     int[] destinationOne = {6, 7, 8};
@@ -33,14 +42,5 @@ public class ArrayCopierTester {
     testCopier.copy(source, destinationThree);
     System.out.println("After copying, the third destination array is "
         + printArray(destinationThree));
-  }
-
-  private static String printArray(int[] toPrint) {
-    String printout = "[";
-    for (int i = 0; i < toPrint.length - 1; i++) {
-      printout += toPrint[i] + ", ";
-    }
-    printout += toPrint[toPrint.length - 1] + "]";
-    return printout;
   }
 }

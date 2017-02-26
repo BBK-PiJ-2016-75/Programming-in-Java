@@ -1,10 +1,11 @@
 package com.github.bbkpij201675.programminginjava.day12.ex03;
 
-import org.junit.*;
-import static org.junit.Assert.*;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class PersonTest {
-  
+
   @Test
   public void testsNormalName() {
     Person p = new Person();
@@ -13,7 +14,7 @@ public class PersonTest {
     String expected = "DRY";
     assertEquals(expected, output);
   }
-  
+
   @Test
   public void testsExtraSpacesInName() {
     Person p = new Person();

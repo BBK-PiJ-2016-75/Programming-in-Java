@@ -1,16 +1,16 @@
 package com.github.bbkpij201675.programminginjava.day10;
 
 public class Factorials {
-  
+
   public static int factorialRecursive(int n) {
     if (n == 1) {
       return 1;
     } else {
-      int result = n * factorialRecursive(n -1);
+      int result = n * factorialRecursive(n - 1);
       return result;
     }
   }
-  
+
   public static int factorialIterative(int n) {
     int result = n;
     for (int i = n - 1; i > 0; i--) {
@@ -18,7 +18,7 @@ public class Factorials {
     }
     return result;
   }
-  
+
   public static void main(String[] args) {
     int recursive = factorialRecursive(5);
     System.out.println(recursive);

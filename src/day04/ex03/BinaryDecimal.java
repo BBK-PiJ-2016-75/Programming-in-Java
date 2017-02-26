@@ -8,7 +8,8 @@ public class BinaryDecimal {
 
   /**
    * Multiplies the base by itself, the exponent amount of times.
-   * @param base the base number to be multiplied by itself.
+   *
+   * @param base     the base number to be multiplied by itself.
    * @param exponent the amount of times to run the multiplication.
    * @return the result of the calculation.
    */
@@ -28,6 +29,7 @@ public class BinaryDecimal {
 
   /**
    * Calculates a number in base 2, by multiplying 2 by itself by the exponent.
+   *
    * @param exponent the exponent to multiply base 2 by.
    * @return the result of the calculation.
    */
@@ -37,6 +39,7 @@ public class BinaryDecimal {
 
   /**
    * Converts a number entered in binary notation to its decimal equivalent.
+   *
    * @param binaryInput a number in binary notation.
    * @return the same number as binaryInput, in decimal notation.
    */
@@ -52,6 +55,7 @@ public class BinaryDecimal {
 
   /**
    * Converts a number entered in decimal notation to its binary equivalent.
+   *
    * @param decimalInput a number in decimal notation.
    * @return the same number as decimalInput, in binary notation.
    */

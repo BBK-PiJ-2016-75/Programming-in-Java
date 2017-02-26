@@ -12,11 +12,11 @@ public class fibonacci {
     if (precalculated == null) {
       initPrecalculatedArray(n);
     }
-    if (precalculated[n-1] != -1) {
-      return precalculated[n-1];
+    if (precalculated[n - 1] != -1) {
+      return precalculated[n - 1];
     } else {
-      int result = fib(n-1) + fib(n-2);
-      precalculated[n-1] = result;
+      int result = fib(n - 1) + fib(n - 2);
+      precalculated[n - 1] = result;
       return result;
     }
   }

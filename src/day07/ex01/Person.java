@@ -12,15 +12,15 @@ public class Person {
     this.name = name;
   }
 
-  public void setNextPerson(Person nextPerson) {
-    this.nextPerson = nextPerson;
-  }
-
   public String getName() {
     return name;
   }
 
   public Person getNextPerson() {
     return nextPerson;
+  }
+
+  public void setNextPerson(Person nextPerson) {
+    this.nextPerson = nextPerson;
   }
 }
