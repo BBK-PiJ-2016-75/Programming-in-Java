@@ -1,7 +1,8 @@
 package com.github.bbkpij201675.programminginjava.day09.ex03;
 
 /**
- * Created by Dennis on 10/02/2017.
+ * A generic node for a generic doubly-linked list.
+ * @param <T> the generic type for the node
  */
 public class GenericDoublyLinkedNode<T> {
   private GenericDoublyLinkedNode previousNode = null;
@@ -22,10 +23,6 @@ public class GenericDoublyLinkedNode<T> {
 
   public T getData() {
     return data;
-  }
-
-  public void setData(T data) {
-    this.data = data;
   }
 
   public GenericDoublyLinkedNode getNextNode() {
