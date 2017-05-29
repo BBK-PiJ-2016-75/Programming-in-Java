@@ -1,7 +1,7 @@
 package com.github.bbkpij201675.programminginjava.day09.ex05;
 
 /**
- * Created by Dennis on 04/03/2017.
+ * Simple program to test the methods of the GenericNumberStack class.
  */
 public class GenericNumberStackTester {
 

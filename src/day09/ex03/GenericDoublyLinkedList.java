@@ -2,6 +2,7 @@ package com.github.bbkpij201675.programminginjava.day09.ex03;
 
 /**
  * A generic doubly-linked list, which uses generic nodes.
+ *
  * @param <T> the generic type for the list
  */
 public class GenericDoublyLinkedList<T> {
@@ -16,6 +17,7 @@ public class GenericDoublyLinkedList<T> {
   /**
    * Adds an element to the doubly-linked list, updating the list's head and
    * tail, and incrementing the list's count total.
+   *
    * @param element the element of data to add to the list
    */
   public void addElement(T element) {
@@ -38,6 +40,7 @@ public class GenericDoublyLinkedList<T> {
   /**
    * Deletes a specified item from the doubly-linked list, by first checking
    * if the item is at the list's head or tail, then checking in order.
+   *
    * @param element the element of data to delete from the list
    */
   public void deleteElement(T element) {

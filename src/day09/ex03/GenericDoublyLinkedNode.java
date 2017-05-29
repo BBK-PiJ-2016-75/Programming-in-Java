@@ -2,6 +2,7 @@ package com.github.bbkpij201675.programminginjava.day09.ex03;
 
 /**
  * A generic node for a generic doubly-linked list.
+ *
  * @param <T> the generic type for the node
  */
 public class GenericDoublyLinkedNode<T> {

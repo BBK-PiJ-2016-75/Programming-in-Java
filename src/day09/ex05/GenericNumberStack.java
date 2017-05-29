@@ -2,6 +2,7 @@ package com.github.bbkpij201675.programminginjava.day09.ex05;
 
 /**
  * A generic stack, which only accepts Number and its subclass objects.
+ *
  * @param <N> the generic number type for the stack
  */
 public class GenericNumberStack<N extends Number> {
@@ -15,6 +16,7 @@ public class GenericNumberStack<N extends Number> {
 
   /**
    * Pushes a new generic number type onto the stack.
+   *
    * @param newData the number to push
    */
   public void push(N newData) {
@@ -28,6 +30,7 @@ public class GenericNumberStack<N extends Number> {
 
   /**
    * Pops the top generic number off of the stack.
+   *
    * @return the popped number
    */
   public N pop() {
