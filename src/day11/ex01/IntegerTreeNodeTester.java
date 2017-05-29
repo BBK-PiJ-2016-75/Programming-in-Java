@@ -26,5 +26,7 @@ public class IntegerTreeNodeTester {
     System.out.println(tree.toSimplifiedString());
     System.out.println("Tree contains value 10: " + tree.contains(10));
     System.out.println("Tree contains value 5: " + tree.contains(5));
+    System.out.println("Tree depth: " + tree.depth());
+    System.out.println("Expected result: 2");
   }
 }
