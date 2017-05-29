@@ -10,7 +10,7 @@ public class GenericNumberStackTester {
     tester.launch();
   }
 
-  public void launch() {
+  private void launch() {
     GenericNumberStack<Double> myNumberStack = new GenericNumberStack<>(0.0);
     myNumberStack.push(1.1);
     myNumberStack.push(2.2);
