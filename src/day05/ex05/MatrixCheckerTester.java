@@ -7,10 +7,10 @@ public class MatrixCheckerTester {
 
   public static void main(String[] args) {
     MatrixCheckerTester tester = new MatrixCheckerTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     MatrixChecker myChecker = new MatrixChecker();
 
     //Check if arrays are symmetrical.

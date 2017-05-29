@@ -14,10 +14,10 @@ public class SmartPhoneTester {
 
   public static void main(String[] args) {
     SmartPhoneTester tester = new SmartPhoneTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     MobilePhone myPhone = new SmartPhone("HTC");
     test((SmartPhone) myPhone);
     testPhone(myPhone);

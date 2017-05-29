@@ -7,10 +7,10 @@ public class GuitarTester {
 
   public static void main(String[] args) {
     GuitarTester tester = new GuitarTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Guitar myAxe = new Guitar();
     myAxe.play("Stairway to Heaven");
     myAxe.burn();

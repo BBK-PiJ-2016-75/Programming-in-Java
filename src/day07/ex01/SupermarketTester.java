@@ -7,10 +7,10 @@ public class SupermarketTester {
 
   public static void main(String[] args) {
     SupermarketTester tester = new SupermarketTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Supermarket mySupermarket = new Supermarket();
     System.out.println("The max size for this queue is: "
         + mySupermarket.getMaxSize());

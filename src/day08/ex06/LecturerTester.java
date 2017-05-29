@@ -7,10 +7,10 @@ public class LecturerTester {
 
   public static void main(String[] args) {
     LecturerTester tester = new LecturerTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Lecturer mrThackeray = new Lecturer("Mr. Thackeray");
     System.out.println("Lecturer's name: " + mrThackeray.getName());
     mrThackeray.teach("20th Century History");

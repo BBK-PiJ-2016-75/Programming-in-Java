@@ -10,7 +10,7 @@ public class HanoiTowers {
 
   public static void main(String[] args) {
     HanoiTowers myTowers = new HanoiTowers();
-    myTowers.run();
+    myTowers.launch();
   }
 
   /**
@@ -29,7 +29,7 @@ public class HanoiTowers {
     }
   }
 
-  private void run() {
+  private void launch() {
     System.out.println("Number of moves required to move " + TOWER_SIZE + " "
         + "disks from the first to the third post:");
     moveTowers(TOWER_SIZE);

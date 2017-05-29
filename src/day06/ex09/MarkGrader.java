@@ -18,7 +18,7 @@ public class MarkGrader {
 
   public static void main(String[] args) {
     MarkGrader myGrader = new MarkGrader();
-    myGrader.run();
+    myGrader.launch();
   }
 
   private void inputMark() {
@@ -42,7 +42,7 @@ public class MarkGrader {
         + failures + " fails (plus " + invalid + " invalid entries).");
   }
 
-  private void run() {
+  private void launch() {
     inputMark();
   }
 }

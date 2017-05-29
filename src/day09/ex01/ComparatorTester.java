@@ -7,10 +7,10 @@ public class ComparatorTester {
 
   public static void main(String[] args) {
     ComparatorTester tester = new ComparatorTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Comparator compare = new Comparator();
     System.out.println("Max of 7 & 11: " + compare.getMax(7, 11));
     System.out.println("Max of 9.3 & 1.4: " + compare.getMax(9.3, 1.4));

@@ -7,10 +7,10 @@ public class MortgageTester {
 
   public static void main(String[] args) {
     MortgageTester tester = new MortgageTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Mortgage myMortgage = new Mortgage();
     System.out.print("Please enter the total amount you wish to borrow for a"
         + "mortgage: ");

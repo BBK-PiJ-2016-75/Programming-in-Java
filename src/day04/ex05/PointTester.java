@@ -7,10 +7,10 @@ public class PointTester {
 
   public static void main(String[] args) {
     PointTester tester = new PointTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Point first = new Point();
     first.x = 3.0;
     first.y = 4.0;

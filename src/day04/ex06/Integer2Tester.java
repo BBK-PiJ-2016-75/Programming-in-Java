@@ -7,10 +7,10 @@ public class Integer2Tester {
 
   public static void main(String[] args) {
     Integer2Tester tester = new Integer2Tester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Integer2 i2 = new Integer2();
     System.out.print("Enter a number: ");
     String str = System.console().readLine();

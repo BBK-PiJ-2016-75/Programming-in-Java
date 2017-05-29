@@ -7,10 +7,10 @@ public class HashUtilitiesTester {
 
   public static void main(String[] args) {
     HashUtilitiesTester tester = new HashUtilitiesTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     System.out.println("Give me a string and I will calculate its hash code");
     String str = System.console().readLine();
     int hash = str.hashCode();

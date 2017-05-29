@@ -7,10 +7,10 @@ public class SpyTester {
 
   public static void main(String[] args) {
     SpyTester tester = new SpyTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Spy spy01 = new Spy(007);
     Spy spy02 = new Spy(101);
     Spy spy03 = new Spy(700);

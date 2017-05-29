@@ -7,10 +7,10 @@ public class SimpleMapImplTester {
 
   public static void main(String[] args) {
     SimpleMapImplTester tester = new SimpleMapImplTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     SimpleMapImpl myMap = new SimpleMapImpl();
     System.out.println("My map is empty: " + myMap.isEmpty());
     myMap.put(-1, "Bob");

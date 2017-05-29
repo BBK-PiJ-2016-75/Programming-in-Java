@@ -10,10 +10,10 @@ public class TestHospitalManager {
 
   public static void main(String[] args) {
     TestHospitalManager tester = new TestHospitalManager();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
 
     //Patient fPatient = hm.getFirstPatient();
     // System.out.println("Patient name: " + fPatient.getName());

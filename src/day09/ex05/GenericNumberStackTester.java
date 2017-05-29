@@ -7,10 +7,10 @@ public class GenericNumberStackTester {
 
   public static void main(String[] args) {
     GenericNumberStackTester tester = new GenericNumberStackTester();
-    tester.run();
+    tester.launch();
   }
 
-  public void run() {
+  public void launch() {
     GenericNumberStack<Double> myNumberStack = new GenericNumberStack<>(0.0);
     myNumberStack.push(1.1);
     myNumberStack.push(2.2);

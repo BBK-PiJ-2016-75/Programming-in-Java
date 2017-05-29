@@ -7,10 +7,10 @@ public class CalculatorTester {
 
   public static void main(String[] args) {
     CalculatorTester tester = new CalculatorTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     System.out.print("5 + 7 is ");
     Calculator.add(5, 7);
     System.out.print("42 - 18 is ");

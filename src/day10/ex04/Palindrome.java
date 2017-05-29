@@ -7,7 +7,7 @@ public class Palindrome {
 
   public static void main(String[] args) {
     Palindrome myPalindrome = new Palindrome();
-    myPalindrome.run();
+    myPalindrome.launch();
   }
 
   /**
@@ -40,7 +40,7 @@ public class Palindrome {
     }
   }
 
-  private void run() {
+  private void launch() {
     String palindrome = "Able was I, 'ere I saw Elba!";
     System.out.println("String to check: " + palindrome);
     System.out.println(palindrome + " is a palindrome: "

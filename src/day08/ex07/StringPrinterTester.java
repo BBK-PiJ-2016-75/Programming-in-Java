@@ -7,10 +7,10 @@ public class StringPrinterTester {
 
   public static void main(String[] args) {
     StringPrinterTester tester = new StringPrinterTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     String example = "The quick brown fox jumps over the lazy dog";
     System.out.print(example + ": ");
     StringPrinter.printEven(example);

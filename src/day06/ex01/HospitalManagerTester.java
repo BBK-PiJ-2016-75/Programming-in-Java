@@ -7,10 +7,10 @@ public class HospitalManagerTester {
 
   public static void main(String[] args) {
     HospitalManagerTester tester = new HospitalManagerTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     HospitalManager myHospital = new HospitalManager();
     myHospital.addPatient(new Patient("John Doe", 45, "Palsy"));
     myHospital.addPatient(new Patient("Jane Doe", 35, "Palsy"));

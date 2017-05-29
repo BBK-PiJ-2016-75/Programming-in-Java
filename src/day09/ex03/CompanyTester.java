@@ -8,10 +8,10 @@ public class CompanyTester {
 
   public static void main(String[] args) {
     CompanyTester tester = new CompanyTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Company myCompany = new Company();
     myCompany.employeeNames.addElement("Joe Bloggs");
     myCompany.employeeNames.addElement("Jane Bloggs");

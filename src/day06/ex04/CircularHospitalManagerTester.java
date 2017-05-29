@@ -7,10 +7,10 @@ public class CircularHospitalManagerTester {
 
   public static void main(String[] args) {
     CircularHospitalManagerTester tester = new CircularHospitalManagerTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     CircularHospitalManager myHospital = new CircularHospitalManager();
     myHospital.addPatient(new CircularPatient("John Doe", 45, "Palsy"));
     myHospital.addPatient(new CircularPatient("Jane Doe", 35, "Palsy"));

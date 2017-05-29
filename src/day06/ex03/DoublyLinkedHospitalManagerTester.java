@@ -13,10 +13,10 @@ public class DoublyLinkedHospitalManagerTester {
   public static void main(String[] args) {
     DoublyLinkedHospitalManagerTester tester
         = new DoublyLinkedHospitalManagerTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     DoublyLinkedHospitalManager myHospital = new DoublyLinkedHospitalManager();
     myHospital.addPatient(new DoublyLinkedPatient("John Doe", 45, "Palsy"));
     myHospital.addPatient(new DoublyLinkedPatient("Jane Doe", 35, "Palsy"));

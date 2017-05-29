@@ -7,10 +7,10 @@ public class MatrixTester {
 
   public static void main(String[] args) {
     MatrixTester tester = new MatrixTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     Matrix myMatrix = new Matrix(3, 3);
     myMatrix.prettyPrint();
     myMatrix.setElement(1, 1, 999);

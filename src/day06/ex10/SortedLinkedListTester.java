@@ -7,10 +7,10 @@ public class SortedLinkedListTester {
 
   public static void main(String[] args) {
     SortedLinkedListTester tester = new SortedLinkedListTester();
-    tester.run();
+    tester.launch();
   }
 
-  private void run() {
+  private void launch() {
     SortedLinkedList myList = new SortedLinkedList();
     for (int i = 0; i < 15; i++) {
       int random = (int) Math.abs(1000 * Math.random());
