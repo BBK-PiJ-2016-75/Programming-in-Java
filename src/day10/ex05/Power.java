@@ -17,17 +17,27 @@ public class Power {
    * @param exponent the provided exponent
    * @return the calculated power
    */
-  private int pow(int base, int exponent) {
+  private int powRecursive(int base, int exponent) {
     if (exponent == 0) {
       return 1;
     } else if (exponent == 1) {
       return base;
     } else {
-      return base * pow(base, exponent - 1);
+      return base * powRecursive(base, exponent - 1);
     }
   }
 
+  private int powIterative(int base, int exponent) {
+    int result = base;
+    for (int i = 1; i < exponent; i++) {
+      result *= base;
+    }
+    return result;
+  }
+
   private void launch() {
-    System.out.println(pow(3, 3));
+    System.out.println("Recursive result: " + powRecursive(4, 7));
+    System.out.println("Iterative result: " + powIterative(4, 7));
+    System.out.println("Expected result: 16384");
   }
 }

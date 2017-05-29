@@ -38,9 +38,8 @@ public class Fibonacci {
   }
 
   public static void main(String[] args) {
-    int recursive = fibRecursive(45);
-    System.out.println(recursive);
-    int iterative = fibIterative(45);
-    System.out.println(iterative);
+    System.out.println("Recursive result: " + fibRecursive(45));
+    System.out.println("Iterative result: " + fibIterative(45));
+    System.out.println("Expected result: 1134903170");
   }
 }

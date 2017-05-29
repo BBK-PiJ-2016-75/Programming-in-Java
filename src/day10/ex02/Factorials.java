@@ -34,11 +34,8 @@ public class Factorials {
   }
 
   public static void main(String[] args) {
-    int recursive = factorialRecursive(5);
-    System.out.println(recursive);
-    System.out.println("Expected: 120");
-    int iterative = factorialIterative(5);
-    System.out.println(iterative);
-    System.out.println("Expected: 120");
+    System.out.println("Recursive result: " + factorialRecursive(5));
+    System.out.println("Iterative result: " + factorialIterative(5));
+    System.out.println("Expected result: 120");
   }
 }

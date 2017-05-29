@@ -30,8 +30,8 @@ public class HanoiTowers {
   }
 
   private void launch() {
-    System.out.println("Number of moves required to move " + TOWER_SIZE + " "
-        + "disks from the first to the third post:");
+    System.out.println("Number of moves required to move " + TOWER_SIZE
+        + " disks from the first to the third post:");
     moveTowers(TOWER_SIZE);
     System.out.println(moves);
   }
