@@ -44,6 +44,10 @@ public class GenericNumberStack<N extends Number> {
     }
   }
 
+  /**
+   * Checks if the stack is empty or not.
+   * @return whether stack is empty
+   */
   public boolean isEmpty() {
     return this.previous == null;
   }

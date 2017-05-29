@@ -17,11 +17,13 @@ public class GenericNumberStackTester {
     myNumberStack.push(3.3);
     myNumberStack.push(4.4);
     myNumberStack.push(5.5);
+    System.out.println("Stack is empty: " + myNumberStack.isEmpty());
     myNumberStack.pop();
     myNumberStack.pop();
     myNumberStack.pop();
     myNumberStack.pop();
     myNumberStack.pop();
+    System.out.println("Stack is empty: " + myNumberStack.isEmpty());
     // GenericNumberStack<String> myStringStack = new GenericNumberStack<>("0.0");
   }
 }
