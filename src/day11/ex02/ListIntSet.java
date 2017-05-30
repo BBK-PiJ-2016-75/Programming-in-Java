@@ -25,7 +25,8 @@ public class ListIntSet implements IntSet {
   @Override
   public void add(int value) {
     if (!contains(value)) {
-      ListIntSet newNode = new ListIntSet(value);
+      ListIntSet newNode = new ListIntSet(this.value);
+      this.value = value;
       newNode.next = this.next;
       this.next = newNode;
     } else {

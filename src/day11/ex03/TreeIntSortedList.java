@@ -1,7 +1,7 @@
 package com.github.bbkpij201675.programminginjava.day11.ex03;
 
 /**
- * asa
+ * An implementation of IntSortedList, as a binary search tree sorted list.
  */
 public class TreeIntSortedList implements IntSortedList {
   private int value;
@@ -9,8 +9,9 @@ public class TreeIntSortedList implements IntSortedList {
   private TreeIntSortedList right;
 
   /**
-   * asa
-   * @param value
+   * Constructs a new tree list, starting with the given value as the root node.
+   *
+   * @param value the value of the root
    */
   public TreeIntSortedList(int value) {
     this.value = value;
@@ -26,7 +27,19 @@ public class TreeIntSortedList implements IntSortedList {
    */
   @Override
   public void add(int value) {
-
+    if (value <= this.value) {
+      if (this.left == null) {
+        this.left = new TreeIntSortedList(value);
+      } else {
+        this.left.add(value);
+      }
+    } else {
+      if (this.right == null) {
+        this.right = new TreeIntSortedList(value);
+      } else {
+        this.right.add(value);
+      }
+    }
   }
 
   /**
@@ -37,6 +50,39 @@ public class TreeIntSortedList implements IntSortedList {
    */
   @Override
   public boolean contains(int value) {
-    return false;
+    if (value == this.value) {
+      return true;
+    } else if (value < this.value) {
+      if (this.left == null) {
+        return false;
+      } else {
+        return this.left.contains(value);
+      }
+    } else {
+      if (this.right == null) {
+        return false;
+      } else {
+        return this.right.contains(value);
+      }
+    }
+  }
+
+  /**
+   * Returns a string with the values of the elements in the list separated
+   * by commas.
+   *
+   * @return the string of all the current values in the sorted list
+   */
+  @Override
+  public String toString() {
+    String treeSortedList = "";
+    if (this.left != null) {
+      treeSortedList += left.toString();
+    }
+    treeSortedList += this.value + ", ";
+    if (this.right != null) {
+      treeSortedList += right.toString();
+    }
+    return treeSortedList;
   }
 }
