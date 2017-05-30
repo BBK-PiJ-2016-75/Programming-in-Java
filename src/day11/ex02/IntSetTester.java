@@ -1,5 +1,9 @@
 package com.github.bbkpij201675.programminginjava.day11.ex02;
 
+/**
+ * Simple program to test the methods of the TreeIntSet and ListIntSet 
+ * classes, which both implement the IntSet interface.
+ */
 public class IntSetTester {
 
   public static void main(String[] args) {

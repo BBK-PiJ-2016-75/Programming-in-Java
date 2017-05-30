@@ -2,7 +2,7 @@ package com.github.bbkpij201675.programminginjava.day11.ex02;
 
 /**
  * An interface for creating sets.
- * The set cannot contain any duplicated values.
+ * A set cannot contain any duplicated values.
  */
 public interface IntSet {
 
