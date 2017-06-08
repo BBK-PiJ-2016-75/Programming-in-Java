@@ -9,18 +9,18 @@ import static org.junit.Assert.assertEquals;
  * A simple battery of tests to verify the behaviour of the HashUtilities class.
  */
 public class HashUtilitiesTest {
-  private HashUtilities hash;
+  private HashUtilities testHash;
 
   @Before
-  public void setUp() throws Exception {
-    hash = new HashUtilities();
+  public void setTestHash() throws Exception {
+    testHash = new HashUtilities();
   }
 
   @Test
   public void testsZero() {
     int toCheck = 0;
     int expected = 0;
-    int actual = hash.shortHash(toCheck);
+    int actual = testHash.shortHash(toCheck);
     assertEquals(expected, actual);
   }
 
@@ -28,7 +28,7 @@ public class HashUtilitiesTest {
   public void testsMax() {
     int toCheck = Integer.MAX_VALUE;
     int expected = 647;
-    int actual = hash.shortHash(toCheck);
+    int actual = testHash.shortHash(toCheck);
     assertEquals(expected, actual);
   }
 
@@ -36,7 +36,7 @@ public class HashUtilitiesTest {
   public void testsNineNineNine() {
     int toCheck = 999;
     int expected = 999;
-    int actual = hash.shortHash(toCheck);
+    int actual = testHash.shortHash(toCheck);
     assertEquals(expected, actual);
   }
 }

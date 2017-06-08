@@ -1,5 +1,8 @@
 package com.github.bbkpij201675.programminginjava.day12.ex03;
 
+/**
+ * Utility class which returns a Person's initials from a given name.
+ */
 public class Person {
 
   public String getInitials(String fullName) {
