@@ -12,7 +12,7 @@ public class HashUtilitiesTest {
   private HashUtilities testHash;
 
   @Before
-  public void setTestHash() throws Exception {
+  public void setUp() throws Exception {
     testHash = new HashUtilities();
   }
 

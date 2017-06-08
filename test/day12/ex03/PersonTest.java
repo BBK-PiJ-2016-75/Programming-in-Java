@@ -12,7 +12,7 @@ public class PersonTest {
   private Person testPerson;
 
   @Before
-  public void setTestPerson() throws Exception {
+  public void setUp() throws Exception {
     testPerson = new Person();
   }
 
