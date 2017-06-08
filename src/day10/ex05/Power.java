@@ -13,7 +13,7 @@ public class Power {
   /**
    * Recursive method to calculate the power of a the base and exponent.
    *
-   * @param base the provided base
+   * @param base     the provided base
    * @param exponent the provided exponent
    * @return the calculated power
    */
